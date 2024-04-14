@@ -214,7 +214,11 @@ li a:hover{
     color: white;
     transition: all 1s ease;
 }
+.item button a{
 
+    text-decoration: none;
+    color: white;
+}
 .item button:hover{
     background-color: rgba(58,70,100);
     
