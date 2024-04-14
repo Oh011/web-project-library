@@ -229,7 +229,7 @@ li a:hover{
 
 /* sigin in , sign up styling */
 
-.sign-in-container ,.sign-up-container{
+.sign-in-container ,.sign-up-container , .contact-us-container{
 
     height: 120vh;
 
@@ -248,7 +248,7 @@ li a:hover{
 
 
 
-.sign-in-container .form-container{
+.sign-in-container .form-container {
 
 
     background-color: transparent;
@@ -266,13 +266,13 @@ li a:hover{
 }
 
 
-.sign-up-container .form-container{
+.sign-up-container .form-container   {
 
 
     background-color: transparent;
     height:500px;
     width: 30%;
-    box-shadow: 5px 5px 5px 4px rgba(58,70,100) , 5px 5px 5px 10px whitesmoke;
+ 
 
     display: flex;
 
@@ -282,6 +282,31 @@ li a:hover{
 }
 
 
+.contact-us-container .form-container{
+
+    background-color: transparent;
+    height: 550px;
+    width:40%;
+    display: flex;
+    box-shadow: 5px 5px 5px 4px rgba(58,70,100) , 5px 5px 5px 10px whitesmoke;
+
+
+}
+
+
+
+.contact-us-container .form-container textarea{
+
+    width: 70%;
+    height: 70px;
+}
+
+.contact-us-container .form-container .text-area{
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
 form{
 
    display: flex;
@@ -385,7 +410,7 @@ form .remember-me ,form .is-admin{
 }
 
 
-.sign-up-container .form-container .btn-group{
+.sign-up-container .form-container .btn-group ,.contact-us-container .form-container .btn-group{
 
     height: 80px;
     width: 100%;

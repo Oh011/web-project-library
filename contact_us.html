@@ -9,6 +9,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
         <title>contact_us</title>
+
+        <link rel="stylesheet" href="style.css">
     
 
     </head>
@@ -16,46 +18,82 @@
 
 <body>
     
-        <nav>
+    <div class="nav-bar">
 
+        <div class="book-icon">
+
+            <img src="imgs/book-icon.png">
+        </div>
+        
+        
+        <nav>
+            
             <ul>
+
                 <li><a href="index.html">Home</a></li>
                 <li><a href="sign in.html">Sign in</a></li>
-                <li><a href="contact_us.html"> Contact us</a></li>
                 <li><a href="about_us.html">About us</a></li>
                 <li><a href="terms_of_use.html">Terms of Use</a></li>
-             
+                
+                
+                
             </ul>
         </nav>
+        
+    </div>
 
 
-        <hr>
+      
 
-        <img src="imgs/ad.jpeg">
+       
 
-        <hr>
+        <div class="contact-us-container">
 
-        <div>
-            <form action="">
-                <h3>contact us</h3>
-                <label for="first">First Name</label>
-                <input type="text" name="firstname" id="first" placeholder="FirstName">
-                <br>
-                <label for="last">LastName</label>
-                <input type="text" name="LastName" id="last" placeholder="LastName">
-                <br>
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email" placeholder="email">
-                <br>
-                <label for="subject">Subject</label>
-                <input type="text" name="subject" id="subject" placeholder="subject">
-                <br>
-                <label for="mess">Leave Us a Message</label>
-                <br>
-                <textarea name="Message" id="mess" cols="30" rows="10"></textarea>
-                <br>
-                <button>Submit</button>
-            </form>
+
+            <div class="form-container">
+                <form action="">
+    
+    
+                    <div class="form-header">
+                        <h3>contact us</h3>
+
+                    </div>
+                    
+                    <div class="input-box">
+
+                        <input type="text" name="firstname" id="first" placeholder="FirstName">
+                    </div>
+
+                    <div class="input-box">
+
+                        <input type="text" name="LastName" id="last" placeholder="LastName">
+                    </div>
+              
+                    <div class="input-box">
+
+                        <input type="email" name="email" id="email" placeholder="email">
+                    </div>
+    
+
+                    <div class="input-box">
+
+                        <input type="text" name="subject" id="subject" placeholder="subject">
+                    </div>
+             
+                  
+                    <div class="text-area">
+                        <textarea name="Message" id="mess" placeholder="leave a message"></textarea>
+
+                    </div>
+
+                    <div class="btn-group">
+
+                        <button type="submit"> <a href="index.html">Submit</a></button>
+                    </div>
+
+                </form>
+
+            </div>
         </div>
 
     </body>
