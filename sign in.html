@@ -24,7 +24,7 @@
     <body>
 
       
-        <div class="nav-bar">
+        <div class="nav-bar-sign-in">
 
             <div class="book-icon">
 
@@ -32,7 +32,7 @@
             </div>
             
             
-            <nav>
+            <nav class="nav-sign-in">
                 
                 <ul>
              
@@ -77,6 +77,8 @@
                        <input type="password" placeholder="Password" id= "password" name="password"> 
                        <i class="fa-solid fa-lock"></i>
                    </div>
+
+                   <input type="checkbox" name="is_admin" checked hidden id="is_admin">
           
                     <div class="remember-me">
     
@@ -88,7 +90,7 @@
 
                     <div class="btn-group">
 
-                        <button type="submit"><a href="index_user.html">sigin in</a></button>
+                        <button type="submit" ><a id="sign_bt" href="">sign in</a></button>
                     </div>
                   
 
@@ -103,5 +105,8 @@
 
 
         </div>
+
+
+        <script src="test.js"></script>
     </body>
 </html>

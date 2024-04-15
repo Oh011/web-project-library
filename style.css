@@ -1,4 +1,8 @@
 
+:root{
+
+    --first-color:
+}
 
 
 
@@ -7,15 +11,80 @@ body{
     margin: 0;
 }
 
-
-.nav-bar{
+/* ==================================== */
+/* nav-home */
+.nav-bar-home , .nav-bar-contact{
 
     display: flex;
     flex-direction:row;
 
     justify-content: center;
     align-items: center;
-    column-gap: 20px;
+    column-gap: 100px;
+    background-color:rgba(58,70,100);
+    position: fixed;
+    /* height: 70px; */
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index:999;
+    padding-block: 15px;
+   
+}
+
+
+
+
+ .nav-bar-home .book-icon  img  ,.nav-bar-contact .book-icon  img{
+
+    width: 50px;
+}
+
+.nav-bar-home .book-icon , .nav-bar-contact .book-icon {
+
+
+    position: relative;
+    left: -150px;
+  
+}
+
+
+.nav-home , .nav-contact{
+
+    width: 30%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+}
+
+
+nav ul{
+
+    list-style: none;
+    display: flex;
+    justify-content:space-between;
+    width: 100%;
+    /* background-color: teal; */
+    margin: 0;
+    padding: 0;
+}
+
+
+/* =================================================== */
+
+
+/* sign in  */
+
+
+
+.nav-bar-sign-in{
+
+    display: flex;
+    flex-direction:row;
+
+    justify-content: center;
+    align-items: center;
+    column-gap: 100px;
     background-color:rgba(58,70,100);
     position: fixed;
     /* height: 70px; */
@@ -30,26 +99,225 @@ body{
 
 
 
- .nav-bar .book-icon  img{
+ .nav-bar-sign-in .book-icon  img{
 
     width: 50px;
 }
 
+.nav-bar-sign-in .book-icon {
 
-nav{
 
-    width: 50%;
+    position: relative;
+    left: -150px;
+  
+}
+
+
+.nav-sign-in{
+
+    width: 30%;
     /* background-color: red; */
     display: flex;
-justify-content: center;
+    justify-content: center;
 }
+
 
 nav ul{
 
     list-style: none;
     display: flex;
     justify-content:space-between;
+    width: 100%;
+    /* background-color: teal; */
+    margin: 0;
+    padding: 0;
+}
+
+
+/* =========================================== */
+
+.nav-bar-sign-up{
+
+    display: flex;
+    flex-direction:row;
+
+    justify-content: center;
+    align-items: center;
+    column-gap: 100px;
+    background-color:rgba(58,70,100);
+    position: fixed;
+    /* height: 70px; */
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index:999;
+    padding-block: 20px;
+   
+}
+
+
+
+
+ .nav-bar-sign-up .book-icon  img{
+
+    width: 50px;
+}
+
+.nav-bar-sign-up .book-icon {
+
+
+    position: relative;
+    left: -150px;
+  
+}
+
+
+.nav-sign-up{
+
+    width: 30%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+}
+
+
+nav ul{
+
+    list-style: none;
+    display: flex;
+    justify-content:space-between;
+    width: 100%;
+    /* background-color: teal; */
+    margin: 0;
+    padding: 0;
+}
+
+
+/* ============================== */
+
+
+
+
+.nav-bar-admin{
+
+    display: flex;
+    flex-direction:row;
+
+    justify-content: center;
+    align-items: center;
+    column-gap: 100px;
+    background-color:rgba(58,70,100);
+    position: fixed;
+    /* height: 70px; */
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index:999;
+    padding-block: 20px;
+   
+}
+.nav-bar-sign-in .book-icon  img{
+
+    width: 50px;
+}
+
+.nav-bar-sign-in .book-icon {
+
+
+    position: relative;
+    left: -150px;
+  
+}
+
+
+.nav-sign-in{
+
+    width: 30%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+}
+
+
+nav ul{
+
+    list-style: none;
+    display: flex;
+    justify-content:space-between;
+    width: 100%;
+    /* background-color: teal; */
+    margin: 0;
+    padding: 0;
+}
+
+
+/* =========================================== */
+
+.nav-bar-admin , .nav-bar-add-book{
+
+    display: flex;
+    flex-direction:row;
+
+    justify-content: center;
+    align-items: center;
+    column-gap: 100px;
+    background-color:rgba(58,70,100);
+    position: fixed;
+    /* height: 70px; */
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index:999;
+    padding-block: 20px;
+   
+}
+
+
+
+
+ .nav-bar-admin .book-icon  img , .nav-bar-add-book .book-icon  img{
+
+    width: 50px;
+}
+
+.nav-bar-admin .book-icon , .nav-bar-add-book .book-icon  img {
+
+
+    position: relative;
+    left: -150px;
+  
+}
+
+
+.nav-admin , .nav-add-book{
+
     width: 50%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+}
+
+
+nav ul{
+
+    list-style: none;
+    display: flex;
+    justify-content:space-between;
+    width: 100%;
+    /* background-color: teal; */
+    margin: 0;
+    padding: 0;
+}
+/* ====================================== */
+
+
+
+nav ul{
+
+    list-style: none;
+    display: flex;
+    justify-content:space-between;
+    width: 100%;
     /* background-color: teal; */
     margin: 0;
     padding: 0;
@@ -233,7 +501,7 @@ li a:hover{
 
 /* sigin in , sign up styling */
 
-.sign-in-container ,.sign-up-container , .contact-us-container{
+.sign-in-container ,.sign-up-container , .contact-us-container , .add-book-container{
 
     height: 120vh;
 
@@ -276,7 +544,8 @@ li a:hover{
     background-color: transparent;
     height:500px;
     width: 30%;
- 
+    box-shadow: 5px 5px 5px 4px rgba(58,70,100) , 5px 5px 5px 10px whitesmoke;
+
 
     display: flex;
 
@@ -298,11 +567,69 @@ li a:hover{
 }
 
 
+.add-book-container .form-container{
 
-.contact-us-container .form-container textarea{
+    background-color: transparent;
+    height: 550px;
+    width:40%;
+    display: flex;
+    box-shadow: 5px 5px 5px 4px rgba(58,70,100) , 5px 5px 5px 10px whitesmoke;
+}
 
+
+.add-book-container .form-container .book-category{
+
+
+    width: 100%;
+    /* background-color: red; */
+    padding-left: 15px;
+}
+
+.add-book-container .form-container .book-category{
+
+    font-weight: 900;
+}
+.add-book-container .form-container .book-category select{
+
+    width: 50%;
+    height: 100%;
+    background-color: transparent;
+    border:none;
+    outline: none;
+    border: 2px solid rgba(58,70,100,0.5);
+    border-radius: 20px;
+    padding-left: 10px
+
+}
+.add-book-container .form-container .text-area{
+
+    
+    width: 100%;
+    display: flex;
+    /* justify-content: center; */
+    padding-left: 20px;
+}
+
+.add-book-container .form-container textarea{
     width: 70%;
     height: 70px;
+    border: solid 2px rgba(58, 70, 100,0.5);
+    border-radius:20px ;
+
+}
+
+.add-book-container .form-container .btn-group{
+
+    position: relative;
+    top: -15px;
+}
+
+.contact-us-container .form-container textarea{
+    
+        width: 70%;
+        height: 70px;
+        border: solid 2px rgba(58, 70, 100,0.5);
+        border-radius:20px ;
 }
 
 .contact-us-container .form-container .text-area{
@@ -356,22 +683,44 @@ form .input-box{
     height: 2px;
     background-color: rgba(58, 70, 100);
     position: absolute;
-    top: 55px;
-    left: -35px;
-    right: 0;
+    top: 51px;
+    left: -38px;
+    right: 0
 }
-
-
 
 .form-header::after{
 
     content: " ";
-    width: 170px;
+    width: 175px;
+    height: 2px;
+    background-color: rgba(58, 70, 100);
+    position: absolute;
+    top: 55px;
+    left: -51px;
+    right: 0;
+
+}
+
+.add-book-container .form-header::before{
+    content: " ";
+    width: 160px;
+    height: 2px;
+    background-color: rgba(58, 70, 100);
+    position: absolute;
+    top: 55px;
+    left: -11px;
+    right: 0;
+}
+
+.add-book-container .form-header::after{
+
+    content: " ";
+    width: 180px;
     height: 2px;
     background-color: rgba(58, 70, 100);
     position: absolute;
     top: 59px;
-    left: -42px;
+    left: -20px;
     right: 0;
 }
 
@@ -431,7 +780,7 @@ form .remember-me ,form .is-admin{
 form .btn-group button{
 
     border: none;
-    width: 80%;
+    width: 50%;
 
     height: 30px;
     background-color: rgba(58,70,100);
