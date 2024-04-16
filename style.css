@@ -13,7 +13,7 @@ body{
 
 /* ==================================== */
 /* nav-home */
-.nav-bar-home , .nav-bar-contact{
+.nav-bar-home , .nav-bar-contact , .nav-bar-aboutus{
 
     display: flex;
     flex-direction:row;
@@ -28,19 +28,19 @@ body{
     left: 0;
     right: 0;
     z-index:999;
-    padding-block: 15px;
+    padding-block: 10px;
    
 }
 
 
 
 
- .nav-bar-home .book-icon  img  ,.nav-bar-contact .book-icon  img{
+ .nav-bar-home .book-icon  img  ,.nav-bar-contact .book-icon  img , .nav-bar-aboutus img{
 
     width: 50px;
 }
 
-.nav-bar-home .book-icon , .nav-bar-contact .book-icon {
+.nav-bar-home .book-icon , .nav-bar-contact .book-icon  , .nav-bar-aboutus .book-icon{
 
 
     position: relative;
@@ -49,7 +49,7 @@ body{
 }
 
 
-.nav-home , .nav-contact{
+.nav-home , .nav-contact , .nav-aboutus{
 
     width: 30%;
     /* background-color: red; */
@@ -92,7 +92,7 @@ nav ul{
     left: 0;
     right: 0;
     z-index:999;
-    padding-block: 20px;
+    padding-block: 10px;
    
 }
 
@@ -151,7 +151,7 @@ nav ul{
     left: 0;
     right: 0;
     z-index:999;
-    padding-block: 20px;
+    padding-block: 10px;
    
 }
 
@@ -213,7 +213,7 @@ nav ul{
     left: 0;
     right: 0;
     z-index:999;
-    padding-block: 20px;
+    padding-block: 10px;
    
 }
 .nav-bar-sign-in .book-icon  img{
@@ -268,7 +268,7 @@ nav ul{
     left: 0;
     right: 0;
     z-index:999;
-    padding-block: 20px;
+    padding-block: 10px;
    
 }
 
@@ -389,6 +389,161 @@ li a:hover{
 
     width: 100%;
 }
+
+
+/* ================================================================================ */
+
+/* about-us styling */
+
+
+
+/* .about-us-container::after{
+
+
+    position: absolute;
+
+    top: 120px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: "";
+    width: 100%;
+    height: 4px;
+    background-color: #383E56;
+    text-align: center;
+
+
+} */
+
+
+.about-us-container::before{
+
+
+    position: absolute;
+
+    top: 93%;
+    left: 0%;
+    right: 0;
+    bottom: 0;
+    content: "";
+    width: 100%;
+    height: 4px;
+    background-color: #383E56;
+    text-align: center;
+
+
+}
+.about-us-container{
+
+    height: 110vh;
+    background-color: #F6F5F2;
+    display:grid;
+    position: relative;
+
+
+    align-content: center;
+    gap: 10px;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 370px 370px;
+
+    
+
+}
+
+
+.left-up-about{
+
+    /* background-color: red; */
+    padding-left: 28px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-right: 2px dashed lightsalmon ;
+
+}
+
+.right-up-about{
+
+    /* background-color: #F69E7B; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    
+}
+
+.right-up-about-img{
+
+
+    width: 60%;
+
+    position: relative;
+    overflow: hidden;
+
+  
+   
+}
+
+
+.right-up-about-img img{
+    
+    width: 100%;
+    display: block;
+}
+
+.right-up-about-img .cover{
+
+    width: 100%;
+    background-color:rgba(0,0,0,0.3);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform:translateY(100%);
+    transition: all 2s ease;
+    text-align: center;
+    color: white;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.right-up-about-img:hover.right-up-about-img .cover{
+    
+        transform:translateY(0%);
+    
+}
+
+
+
+
+
+
+.left-down-about{
+
+    /* background-color: aqua; */
+ 
+    padding-left: 28px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-right: 2px dashed lightsalmon ;
+}
+
+
+.right-down-about{
+
+    /* background-color: burlywood; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 
 
 /* =============================================================================================================================================== */
@@ -651,12 +806,63 @@ form{
 
 
 form .input-box{
-    width: 97%;
+    width: 94%;
     height: 40px;
     position: relative;
     display: flex;
+    flex-direction: column;
+    padding-right: 2px;
+    /* background-color: lightsalmon; */
 
 }
+
+
+#error1{
+
+    position: absolute;
+    top: 45px;
+    left: 20px;
+    right: 0;
+    height: 20px;
+    color: red;
+}
+
+
+#error2{
+
+    position: absolute;
+    top: 45px;
+    left: 20px;
+    right: 0;
+    height: 20px;
+    color: red;
+}
+
+#error3{
+
+    
+    position: absolute;
+    top: 45px;
+    left: 20px;
+    right: 0;
+    height: 20px;
+    color: red;
+
+}
+
+
+#error4{
+
+    
+    position: absolute;
+    top: 45px;
+    left: 20px;
+    right: 0;
+    height: 20px;
+    color: red;
+
+}
+
 
 
 .input-box i{
@@ -733,7 +939,7 @@ form .input-box{
     outline: none;
     border: 2px solid rgba(58,70,100,0.5);
     border-radius: 40px;
-    padding-left: 10px
+    padding-left: 2px
 }
 
 
@@ -777,14 +983,21 @@ form .remember-me ,form .is-admin{
 }
 
 
+form label{
+
+    font-weight: 900;
+}
+
 form .btn-group button{
 
     border: none;
-    width: 50%;
+    width: 45%;
 
     height: 30px;
     background-color: rgba(58,70,100);
     border-radius: 20px;
+    color: white;
+    cursor: pointer;
    
 }
 

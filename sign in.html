@@ -17,6 +17,7 @@
 
 
 
+
      
     </head>
 
@@ -57,7 +58,7 @@
 
             <div class="form-container">
 
-                <form  method="get">
+                <form  method="get" id="sign-in-form" action="" target="_self" >
     
                     <div class="form-header">
     
@@ -67,8 +68,13 @@
     
                     <div class="input-box">
     
-                        <input type="text" placeholder="UserName" id="UserName" name="UserName">
+                        <input type="text" placeholder="UserName" id="username" name="UserName">
                         <i class="fa-solid fa-user"></i>
+
+                        <div id="error1">
+                        
+                        </div>
+                       
                     </div>
     
                    
@@ -76,6 +82,12 @@
     
                        <input type="password" placeholder="Password" id= "password" name="password"> 
                        <i class="fa-solid fa-lock"></i>
+
+                       
+                       <div id="error2">
+                        
+                       </div>
+                      
                    </div>
 
                    <input type="checkbox" name="is_admin" checked hidden id="is_admin">
@@ -88,11 +100,11 @@
     
 
 
-                    <div class="btn-group">
+                    <div class="btn-group" >
+                        <button type="submit" id="sign-bt">sign in</button>
 
-                        <button type="submit" ><a id="sign_bt" href="">sign in</a></button>
                     </div>
-                  
+                    
 
                     <div class="sign-up-text">
 
@@ -107,6 +119,11 @@
         </div>
 
 
-        <script src="test.js"></script>
+
+
+
+      <script src="sign-in.js"></script>
+
+
     </body>
 </html>
