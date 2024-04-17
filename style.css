@@ -253,7 +253,7 @@ nav ul{
 
 /* =========================================== */
 
-.nav-bar-admin , .nav-bar-add-book{
+.nav-bar-admin , .nav-bar-add-book , .nav-bar-user{
 
     display: flex;
     flex-direction:row;
@@ -275,12 +275,12 @@ nav ul{
 
 
 
- .nav-bar-admin .book-icon  img , .nav-bar-add-book .book-icon  img{
+ .nav-bar-admin .book-icon  img , .nav-bar-add-book .book-icon  img , .nav-bar-user .book-icon img{
 
     width: 50px;
 }
 
-.nav-bar-admin .book-icon , .nav-bar-add-book .book-icon  img {
+.nav-bar-admin .book-icon , .nav-bar-add-book .book-icon  , .nav-bar-user .book-icon {
 
 
     position: relative;
@@ -289,7 +289,7 @@ nav ul{
 }
 
 
-.nav-admin , .nav-add-book{
+.nav-admin , .nav-add-book , .nav-user{
 
     width: 50%;
     /* background-color: red; */
@@ -334,10 +334,33 @@ li a{
     
 }
 
-li a:hover{
+ li:hover a{
 
     color:lightsalmon;
 }
+
+li{
+
+    display: flex;
+    align-items: center;
+}
+
+li i{
+    
+    
+    font-size: 14px;
+    color: white;
+    padding-right: 4px;
+    transition: all 1s ease;
+    position: relative;
+    top: 1px;
+}
+
+li:hover i{
+
+    color:lightsalmon;
+}
+
 
 
 .header {
@@ -390,7 +413,159 @@ li a:hover{
     width: 100%;
 }
 
+/*=============================================  */
 
+.chefs{
+
+    text-align: center;
+    padding-block: 40px;
+    height: 100vh;
+   
+
+    
+}
+
+.chefs-upper-text{
+
+    padding-block: 20px;
+}
+
+.chefs-upper-text p{
+
+    font-size: 20px;
+    font-weight: 600;
+    font-family: Copperplate, Papyrus, fantasy;
+
+}
+
+.chefs-upper-text span{
+
+    color: red;
+}
+.chefs .container{
+
+    display: flex;
+    justify-content: center;
+    column-gap: 40px;
+    flex-wrap: nowrap;
+
+
+
+    
+   
+}
+
+
+
+.item img{
+
+    width: 100%;
+
+
+    display: block;
+}
+
+.chefs .container .item{
+
+
+    border: solid transparent;
+    
+    border-radius: 10px;
+    width: 25%;
+
+    display: flex;
+    flex-direction: column;
+
+    overflow: hidden;
+
+
+
+    scale: 1;
+
+    transition: all 1s;
+    position: relative;
+
+   
+
+}
+
+
+
+
+.chefs .conatiner .item:hover .side-bar{
+
+
+    transform: translate(-120%);
+
+
+}
+.item .side-bar{
+
+    width: 50px;
+    height: 200px;
+
+    background-color: white;
+    opacity: 0.5;
+    content: "";
+
+    position:absolute;
+    top: 20px;
+    left: 100%;
+    bottom: 0;
+    right: 0;
+
+    transition: all 1s;
+
+
+}
+
+
+.side-bar a{
+
+    color:black;
+}
+
+
+.item-down-text{
+
+    background-color: #eee;
+    position: relative;
+    top: -82px;
+}
+
+.img-slv{
+
+    position: relative;
+    top: -71px;
+
+}
+.item:hover{
+
+    scale: 1.1;
+}
+
+
+.side-bar ul{
+
+
+    height: 200px;
+
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-around;
+   
+}
+
+
+.side-bar ul i{
+
+    color: black;
+    font-size: 15px;
+    padding-left: 5px;
+}
 /* ================================================================================ */
 
 /* about-us styling */
@@ -554,7 +729,7 @@ li a:hover{
 
 
 
-.books-sections{
+  .books-sections{
 
 
     height: 200vh;
@@ -564,15 +739,15 @@ li a:hover{
    align-items: center;
   
 
-   /* row-gap: 20px; */
+
    
 
-}
+ } 
 
 .books-sections h3{
 
     height: 50px;
-    /* align-self: stretch; */
+
     width: 80%;
     text-align: center;
     background-color: rgba(58,70,100) !important;
@@ -609,8 +784,7 @@ li a:hover{
 
 .item {
 
-    /* background-color: cadetblue; */
-    /* width: 80%; */
+
     text-align: center;
     height: 90%;
     display: flex;
@@ -649,7 +823,8 @@ li a:hover{
 .item img{
 
     width: 50%;
-}
+}  
+
 
 /* ========================================================================================================================================================= */
 
