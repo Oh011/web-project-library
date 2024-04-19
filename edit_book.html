@@ -13,8 +13,13 @@
 
     <title>edit_book</title>
 
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/all.css">
 
 
+<!--   -->
 
 
 </head>
@@ -22,116 +27,204 @@
 
 <body>
 
-    <nav>
+    
 
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="contact_us.html"> Contact us</a></li>
-            <li><a href="about_us.html">About us</a></li>
-            <li><a href="terms_of_use.html">Terms of Use</a></li>
-            <li><a href="add_book.html">Add a new book</a></li>
-            <li><a href="sign in.html">sign im</a></li>
-            <li><a href="list_books.html">view list of books</a></li>
+    
+    <nav class="nav-bar">
+        <div class="nav-left">
+            <h1><a href="index.html">Bibleoticha<span>.</span></a></h1>
+        </div>
+        <div class="nav-center">
+
+            <ul>
+
+                <li class="homee"><a href="index.html" class="home">Home</a></li>
+                <li><a href="about_us.html">About us</a></li>
+                <li><a href="sign in.html">sign in</a></li>
+                <li><a href="add_book.html">Add a new book</a></li>
+                <li><a href="list_books.html">view list of books</a></li>
+                <li><a href="profile_admin.html">profile</a></li>
+
+            </ul>
+
+
           
-        </ul>
+        </div>
+
+        <div class="nav-right">
+           <a href="contact_us.html"> <i class="fa-solid fa-phone"></i></a>
+        </div>
+
     </nav>
 
-
-    <hr>
-
-
-    <img src="imgs/ad.jpeg" width="350px">
     
 
 
-    <div>
-
-        <form >
-
-            <h3>edit book</h3>
+    
+    
 
 
-            <label for="book_id">enter the old book id:</label>
-            <input type="text" name="book_id" id="book_id">
+    <div class="edit-book-container">
 
-            <br>
-
-            <p>enter the new book details</p>
+        <div class="form-container">
 
 
-            <label for="book_id"> book id:</label>
-            <input type="text" name="book_id" id="book_id">
-
-            <br>
-
-            <label id="book_name">book name:</label>
-            <input type="text" name="book_name" id="book_name">
-
-            <br>
+            <form method="get" id="edit-book-form" action="" target="_self">
 
 
-            <label for="book_author">author:</label>
-            <input type="text" name="author" id="book_author">
+                <div class="form-header">
+                    <h3>edit book</h3>
 
-            <br>
-
-            <label for="category">category:</label>
-            <select id="category" name="category" >
-                <optgroup label="Lorem ispum">
-
-                    <option>Lorem ipsum dolor sit.</option>
-                    <option>Lorem ipsum dolor sit.</option>
-                    <option>Lorem ipsum dolor sit.</option>
-                    <option>Lorem ipsum dolor sit.</option>
-                    <option>Lorem ipsum dolor sit.</option>
-
-                </optgroup>
+                </div>
+    
+    
+                
+                <div class="input-box">
 
 
-                <optgroup label="Lorem ispum">
+                    <input type="text" name="book_id" id="old_book_id" placeholder="old book id">
+                    <div id="error1_o"></div>
+                </div>
+                
+    
+    
+    
+                <div class="input-box">
 
-                    <option>Lorem ipsum dolor sit.</option>
-                    <option>Lorem ipsum dolor sit.</option>
-                    <option>Lorem ipsum dolor sit.</option>
-                    <option>Lorem ipsum dolor sit.</option>
-                    <option>Lorem ipsum dolor sit.</option>
+                    <input type="text" name="book_id" id="book_id" placeholder="book id">
+                    <div id="error1"></div>
+                </div>
 
-                </optgroup>
-                <optgroup label="Lorem ispum">
+    
+                <div class="input-box">
 
-                    <option>Lorem ipsum dolor sit.</option>
-                    <option>Lorem ipsum dolor sit.</option>
-                    <option>Lorem ipsum dolor sit.</option>
-                    <option>Lorem ipsum dolor sit.</option>
-                    <option>Lorem ipsum dolor sit.</option>
+                    <input type="text" name="book_name" id="book_name" placeholder="book name">
+                    <div id="error2"></div>
+                </div>
+    
+    
 
-                </optgroup>
-                <optgroup label="Lorem ispum">
+                <div class="input-box">
 
-                    <option>Lorem ipsum dolor sit.</option>
-                    <option>Lorem ipsum dolor sit.</option>
-                    <option>Lorem ipsum dolor sit.</option>
-                    <option>Lorem ipsum dolor sit.</option>
-                    <option>Lorem ipsum dolor sit.</option>
-
-                </optgroup>
-            </select>
-
-            <br>
+                    <input type="text" name="author" id="book_author" placeholder="book author">
+                    <div id="error3"></div>
+                </div>
 
 
-            <label>book description</label>
-            <br>
-            <textarea name="descreption" placeholder="write description  "></textarea>
+              
+                <div class="book-category">
 
-            <br>
+                    
+                    <label for="category">category:</label>
+                    <select id="category" name="category" >
+                        <optgroup label="Lorem ispum">
+            
+                            <option>Lorem ipsum dolor sit.</option>
+                            <option>Lorem ipsum dolor sit.</option>
+                            <option>Lorem ipsum dolor sit.</option>
+                            <option>Lorem ipsum dolor sit.</option>
+                            <option>Lorem ipsum dolor sit.</option>
+            
+                        </optgroup>
+            
+            
+                        <optgroup label="Lorem ispum">
+            
+                            <option>Lorem ipsum dolor sit.</option>
+                            <option>Lorem ipsum dolor sit.</option>
+                            <option>Lorem ipsum dolor sit.</option>
+                            <option>Lorem ipsum dolor sit.</option>
+                            <option>Lorem ipsum dolor sit.</option>
+            
+                        </optgroup>
+                        <optgroup label="Lorem ispum">
+            
+                            <option>Lorem ipsum dolor sit.</option>
+                            <option>Lorem ipsum dolor sit.</option>
+                            <option>Lorem ipsum dolor sit.</option>
+                            <option>Lorem ipsum dolor sit.</option>
+                            <option>Lorem ipsum dolor sit.</option>
+            
+                        </optgroup>
+                        <optgroup label="Lorem ispum">
+            
+                            <option>Lorem ipsum dolor sit.</option>
+                            <option>Lorem ipsum dolor sit.</option>
+                            <option>Lorem ipsum dolor sit.</option>
+                            <option>Lorem ipsum dolor sit.</option>
+                            <option>Lorem ipsum dolor sit.</option>
+            
+                        </optgroup>
+                    </select>
+        </div>
+    
+            
+                <div class="text-area">
 
-            <input type="file"  name="book_pdf">
-            <button type="submit"><a href="index_admin.html">edit</a></button>
+                    <textarea name="descreption" placeholder="write description  "></textarea>
+                </div>
+    
+    
+                
+                
+               <div class="btn-group">
 
+                <button type="submit">edit</button>
+            </div>
+    
+    
+            </form>
 
-        </form>
+        </div>
+
+       
     </div>
+
+
+    <footer class="fs">
+        <div class="container5">
+            <div class="about">
+                <div class="in-about">
+                    <img src="imgs/bookicon3jpg.jpg" style="border-radius: 50%;" alt="">
+                    <h2>Bibleoticha<span>.</span></h2>
+                </div>
+                <p>Bibleoticha is an online library made to make you comfortable while reading books</p>
+                <h3>Social Media</h3>
+                <ul class="social-icons">
+                    <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-whatsapp"></i></a></li>
+                </ul>
+            </div>
+           
+            <div class="footer-detail">
+                <h3>Get in Touch</h3>
+                <ul>
+                    <li>
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>Ahmed Zewail Street - Giza - Egypt</span>
+                    </li>
+      
+                    <li>
+                        <i class="fa-solid fa-envelope"></i>
+                        <a href="">bibleoticha@gmail.com</a>
+                    </li>
+      
+                    <li>
+                        <i class="fa-solid fa-phone"></i>
+                        <a href="">+01011121314</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+      </footer>
+      
+      
+      
+
+
+    <script src="sign.js"></script>
 
 
 

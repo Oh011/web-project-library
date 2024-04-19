@@ -13,6 +13,7 @@
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="css/all.css">
     
 
 
@@ -25,29 +26,22 @@
     <body>
 
       
-        <div class="nav-bar-sign-in">
-
-            <div class="book-icon">
-
-                <img src="imgs/book-icon.png">
+        <nav class="nav-bar">
+            <div class="nav-left">
+                <h1><a href="index.html">Bibleoticha<span>.</span></a></h1>
             </div>
-            
-            
-            <nav class="nav-sign-in">
-                
+            <div class="nav-center">
                 <ul>
-             
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="sign in.html">Sign in</a></li>
-                    <li><a href="contact_us.html"> Contact us</a></li>
-                    <li><a href="about_us.html">About us</a></li>
-                    <li><a href="terms_of_use.html">Terms of Use</a></li>
-                    
-                    
+                    <li class="homee"><a href="index.html" class="home">Home</a></li>
+                    <li><a href="">Our Books</a></li>
+                    <li><a href="about_us.html">About Us</a></li>
+                
                 </ul>
-            </nav>
-            
-        </div>
+            </div>
+            <div class="nav-right">
+               <a href="contact_us.html"> <i class="fa-solid fa-phone"></i></a>
+            </div>
+        </nav>
 
 
 
@@ -58,7 +52,7 @@
 
             <div class="form-container">
 
-                <form  method="get" id="sign-in-form" action="" target="_self" >
+                <form  method="post" id="sign-in-form" action="" target="_self" >
     
                     <div class="form-header">
     
@@ -81,7 +75,7 @@
                    <div class="input-box">
     
                        <input type="password" placeholder="Password" id= "password" name="password"> 
-                       <i class="fa-solid fa-lock"></i>
+                       <i class="fa-solid fa-lock " id="pass-lock"></i>
 
                        
                        <div id="error2">
@@ -117,6 +111,49 @@
 
 
         </div>
+
+
+
+        <footer class="fs">
+            <div class="container5">
+                <div class="about">
+                    <div class="in-about">
+                        <img src="imgs/bookicon3jpg.jpg" style="border-radius: 50%;" alt="">
+                        <h2>Bibleoticha<span>.</span></h2>
+                    </div>
+                    <p>Bibleoticha is an online library made to make you comfortable while reading books</p>
+                    <h3>Social Media</h3>
+                    <ul class="social-icons">
+                        <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-whatsapp"></i></a></li>
+                    </ul>
+                </div>
+               
+                <div class="footer-detail">
+                    <h3>Get in Touch</h3>
+                    <ul>
+                        <li>
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span>Ahmed Zewail Street - Giza - Egypt</span>
+                        </li>
+
+                        <li>
+                            <i class="fa-solid fa-envelope"></i>
+                            <a href="">bibleoticha@gmail.com</a>
+                        </li>
+
+                        <li>
+                            <i class="fa-solid fa-phone"></i>
+                            <a href="">+01011121314</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+
+
 
 
 

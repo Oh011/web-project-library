@@ -1,4 +1,30 @@
 
+
+
+
+if(location.pathname=="/C:/web-project-library/sign%20in.html"|| 
+location.pathname=="/C:/web-project-library/sign%20up.html"){
+
+  let pass_l=document.getElementById("pass-lock");
+  const password = document.getElementById('password');
+  
+  
+  pass_l.onclick=function(){
+  
+    if(password.type=="password"){
+      password.type="text";
+    }
+  
+    else{
+      password.type="password";
+    }
+  }
+}
+
+
+
+
+
 if(location.pathname=="/C:/web-project-library/sign%20in.html")
 
 {
@@ -6,7 +32,7 @@ if(location.pathname=="/C:/web-project-library/sign%20in.html")
 
 
   const username = document.getElementById('username');
-const password = document.getElementById('password');
+
 const is_admin=document.getElementById('is_admin');
 
 
@@ -47,14 +73,19 @@ const form = document.getElementById('sign-in-form');
       document.getElementById('error1').innerText = 'Please enter a username.';
       user_valid=false
     } 
+
+    else{
+      document.getElementById('error1').innerText = '';
+      user_valid=true;
+
+    }
   
     if (password_val=== '') {
       // If the password field is empty, show an error message
       document.getElementById('error2').innerText = 'Please enter a password.';
       pass_valid=false;
     } 
-  
-  
+
     else if( password_val.length<8){
   
       document.getElementById('error2').innerText = 'password is short';
@@ -62,11 +93,17 @@ const form = document.getElementById('sign-in-form');
     } 
     
   
+    else{
+      document.getElementById('error2').innerText = '';
+      pass_valid=true;
+    }
+  
+  
   
   
   
     if(user_valid===false || pass_valid===false){
-      console.log("omar")
+   
       event.preventDefault();
     }
   
@@ -151,6 +188,12 @@ form.addEventListener("submit",function(event){
     document.getElementById('error1').innerText = 'Please enter a username.';
     user_valid=false
   } 
+
+  else{
+
+    document.getElementById('error1').innerText = '';
+    user_valid=true;
+  }
   
   if (password_val=== '') {
     // If the password field is empty, show an error message
@@ -165,6 +208,14 @@ form.addEventListener("submit",function(event){
     pass_valid=false;
   } 
 
+  else{
+
+    
+    document.getElementById('error2').innerText = '';
+    pass_valid=true;
+
+  }
+
 
   if(confirm_pass_val!==password_val){
 
@@ -178,6 +229,12 @@ form.addEventListener("submit",function(event){
     document.getElementById('error3').innerText = 'confirm pass is required';
     conf_pas=false;
 
+  }
+
+  else{
+
+    document.getElementById('error3').innerText = '';
+    conf_pas=true;
   }
 
 
@@ -200,6 +257,15 @@ form.addEventListener("submit",function(event){
     document.getElementById('error4').innerText = 'invalid email';
    
     email_conf=false;
+  }
+
+  else{
+
+    
+    document.getElementById('error4').innerText = '';
+   
+    email_conf=true;
+
   }
   
   
@@ -239,6 +305,8 @@ form.addEventListener("submit",function(event){
 
 else if(location.pathname=="/C:/web-project-library/add_book.html"){
 
+  console.log("kakakaaa")
+
 
 const book_id = document.getElementById('book_id');
 const book_name = document.getElementById('book_name');
@@ -246,8 +314,10 @@ const book_author=document.getElementById("book_author");
 
 
 
-const form=document.getElementById("add-book-form");
 
+
+
+  const form=document.getElementById("add-book-form");
 
 
 
@@ -263,40 +333,50 @@ form.addEventListener("submit",function(event){
 
 
 
+
   const bookid_val = document.getElementById('book_id').value.trim();
   const bookname_val = document.getElementById('book_name').value.trim();
   const bookauthor_val=document.getElementById("book_author").value.trim();
 
 
-  var te=/^[0-9a-zA-Z]+$/;
+  var te=/^[-+]?[0-9]+$/;
 
-  if(bookid_val==''){
 
-    document.getElementById('error1').innerText = 'Please enter a book id.';
+  
+
+
+
+
+  
+    if(bookid_val==''){
+  
+      document.getElementById('error1').innerText = 'Please enter a book id.';
+      bookid_valid=false
+  
+    }
+  
+  
+    else if(bookid_val <=0 )
+    {
+  
+      document.getElementById('error1').innerText = 'invalid book id';
+      bookid_valid=false
+  
+  }
+  
+  else if(! bookid_val.match(te)){
+  
+    document.getElementById('error1').innerText = 'only numbers';
     bookid_valid=false
-
+  
+  }
+  
+  else{
+    document.getElementById('error1').innerText = '';
+    bookid_valid=true;
+  
   }
 
-
-  else if(bookid_val <=0 )
-  {
-
-    document.getElementById('error1').innerText = 'invalid book id';
-    bookid_valid=false
-
-}
-
-else if(! bookid_val.match(te)){
-
-  document.getElementById('error1').innerText = 'only numbers';
-  bookid_valid=false
-
-}
-
-else{
-  document.getElementById('error1').innerText = '';
-
-}
 
 
 
@@ -315,6 +395,12 @@ else if(bookname_val.length <5 )
 
 }
 
+else{
+
+  document.getElementById('error2').innerText = '';
+  bookname_valid=true
+}
+
 
 if(bookauthor_val==""){
 
@@ -330,17 +416,203 @@ else if(bookauthor_val <5){
   book_author_valid=false
 }
 
+else{
 
-if(bookid_valid===false || bookname_valid===false || book_author_valid===false){
-    
-  event.preventDefault();
+  
+  document.getElementById('error3').innerText = '';
+  book_author_valid=true;
+
 }
 
 
+if((bookid_valid===false || bookname_valid===false || book_author_valid===false)){
+
+  event.preventDefault();
+}
+    
 else{
 
   form.action="index_admin.html";
 }
+
+
+
+
+
+
+});
+
+
+
+
+}
+
+
+
+else if(location.pathname=="/C:/web-project-library/edit_book.html"){
+
+
+
+const od_book_id=document.getElementById("old_book_id")
+const book_id = document.getElementById('book_id');
+const book_name = document.getElementById('book_name');
+const book_author=document.getElementById("book_author");
+
+
+
+
+
+
+  const form=document.getElementById("edit-book-form");
+
+
+
+
+form.addEventListener("submit",function(event){
+
+
+  
+  let bookid_valid=true;
+  let bookname_valid=true;
+  let book_author_valid=true;
+  let old_id_valid=true;
+
+
+
+
+
+  const bookid_val = document.getElementById('book_id').value.trim();
+  const bookname_val = document.getElementById('book_name').value.trim();
+  const bookauthor_val=document.getElementById("book_author").value.trim();
+  const old_id_val=document.getElementById("old_book_id").value.trim()
+
+
+  var te=/^[-+]?[0-9]+$/;
+
+
+  
+
+  if(old_id_val==''){
+
+      
+    document.getElementById('error1_o').innerText = 'Please enter a book id.';
+    old_id_valid=false
+
+  }
+
+  else if(old_id_val <=0){
+
+    
+    document.getElementById('error1_o').innerText = 'invalid book id';
+    old_id_valid=false
+  }
+
+  else if(! old_id_val.match(te)){
+  
+    document.getElementById('error1_o').innerText = 'only numbers';
+    old_id_valid=false
+  
+  }
+
+  else{
+    document.getElementById('error1_o').innerText = '';
+    old_id_valid=true;
+  
+  }
+
+
+
+
+  
+    if(bookid_val==''){
+  
+      document.getElementById('error1').innerText = 'Please enter a book id.';
+      bookid_valid=false
+  
+    }
+  
+  
+    else if(bookid_val <=0 )
+    {
+  
+      document.getElementById('error1').innerText = 'invalid book id';
+      bookid_valid=false
+  
+  }
+  
+  else if(! bookid_val.match(te)){
+  
+    document.getElementById('error1').innerText = 'only numbers';
+    bookid_valid=false
+  
+  }
+  
+  else{
+    document.getElementById('error1').innerText = '';
+    bookid_valid=true;
+  
+  }
+
+
+
+
+if(bookname_val==''){
+
+  document.getElementById('error2').innerText = 'Please enter a book name';
+  bookname_valid=false
+
+}
+
+else if(bookname_val.length <5 )
+{
+
+  document.getElementById('error2').innerText = 'invalid book name';
+  bookname_valid=false
+
+}
+
+else{
+
+  document.getElementById('error2').innerText = '';
+  bookname_valid=true
+}
+
+
+if(bookauthor_val==""){
+
+  
+  document.getElementById('error3').innerText = 'Please enter a book author';
+  book_author_valid=false
+
+}
+
+else if(bookauthor_val <5){
+
+  document.getElementById('error3').innerText = 'invalid book author';
+  book_author_valid=false
+}
+
+else{
+
+  
+  document.getElementById('error3').innerText = '';
+  book_author_valid=true;
+
+}
+
+
+if((bookid_valid===false || bookname_valid===false || book_author_valid===false || old_id_valid===false)){
+
+  event.preventDefault();
+}
+    
+else{
+
+  form.action="index_admin.html";
+}
+
+
+
 
 
 

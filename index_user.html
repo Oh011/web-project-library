@@ -1,123 +1,211 @@
 <!DOCTYPE html>
-
-
 <html>
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
 
-<head>
-
-    <meta charset="UTF-8">
-    <meta name="description" content="our book library">
-    <meta name="keywords" content="books , programming , short stories">
-    <meta name="author" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <title>user home page</title>
-
-
-    <link  rel="stylesheet" href="style.css">
-
-
-
-   
-
-
-</head>
-
-
-<body>
-
-
-    <div class="nav-bar-user">
-
-
-        <div class="book-icon">
-    
-            <img src="imgs/book-icon.png">
-        </div>
-
-
-
-        <nav class="nav-user">
-
-            <ul>
-               
-    
-                <li> <i class="fas fa-home " ></i><a href="index.html">Home</a></li>
-                <li><a href="contact_us.html"> Contact us</a></li>
-                <li><a href="about_us.html">About us</a></li>
-                <li><a href="list_books_user.html">list of books</a></li>
-                <li><a href="sign in.html">sign in</a></li>
-                <li><i class="fa-solid fa-user"></i><a href="profile_user.html">profile</a></li>
-<!--     
-                <li>
-    
-                    
-        <input list="search" size="50px" placeholder="search" />
-        <datalist id="serach">
-            <option value="" />
-            <option value="" />
-            <option value="" />
-            <option value="" />
-            <option value="" />
-        </datalist>
-    
-                </li> -->
-    
-    
-    
-    
-               
-               
-            </ul>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="css/all.css">
+    </head>
+    <body>
+        <nav class="nav-bar">
+            <div class="nav-left">
+                <h1><a href="user_index.html">Bibleoticha<span>.</span></a></h1>
+            </div>
+            <div class="nav-center">
+                <ul>
+                    <li class="homee"><a href="user_index.html" class="home">Home</a></li>
+                    <li><a href="">Our Books</a></li>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Profile</a></li>
+                    <li><a href="">Log Out</a></li>
+                </ul>
+            </div>
+            <div class="nav-right">
+               <a href="contact us.html"> <i class="fa-solid fa-phone"></i></a>
+            </div>
         </nav>
 
-
-    </div>
-   
-
-
-
-
-    
-    <div class="header">
-
-
-        <div class="header-text" >
-            
-            
-            
-                
-                <h1>welcome to our Biblioteca book library</h1>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe, cumque esse iusto, praesentium expedita quidem quibusdam placeat sit ducimus accusantium sunt odio at. Porro architecto illo dolorem animi minima assumenda!</p>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe, cumque esse iusto, praesentium expedita quidem quibusdam placeat sit ducimus accusantium sunt odio at. Porro architecto illo dolorem animi minima assumenda!</p>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe, cumque esse iusto, praesentium expedita quidem quibusdam placeat sit ducimus accusantium sunt odio at. Porro architecto illo dolorem animi minima assumenda!</p>
-
-
-                <div class="header-bt">
-
-                    <button>featured books</button>
+        <section class="section1">
+            <div class="container">
+                <div class="left">
+                    <h2>Enjoy Reading Our
+                        Amazing Books</h2>
+                    <!-- <p>Sed autem laudantium dolores. Voluptatem itaque ea consequatur eveniet. Eum quas beatae cumque eum quaerat.</p> -->
+                    <div class="gp-btn">
+                        <a href="#Gallery" class="main-btn">See Some Of Our Books </a>
+                        
+                    </div>
                 </div>
-                
-           
-            
-        </div>
+
+                <div class="right">
+                    <img src="imgs/open-book-icon-free-vector.jpg" alt="">
+                </div>
+            </div>
+        </section>
 
 
-            <div class="header-img">
+        <section class="section2">
+            <div class="container2">
+                <div class="main-titles">
+                    <h2>Top</h2>
+                    <p>Our <span>Most Saled</span> Books</p>
+                </div>
 
-                <img src="imgs/header-img.jpg" >
+                <div class="chef-cards">
+                    <div class="card">
+                        <picture>
+                            <img src="imgs/library books/jurassic-book.png" alt="">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                                <path fill="#fff" fill-opacity="1"
+                                    d="M0,32L17.1,74.7C34.3,117,69,203,103,208C137.1,213,171,139,206,117.3C240,96,274,128,309,165.3C342.9,203,377,245,411,245.3C445.7,245,480,203,514,160C548.6,117,583,75,617,85.3C651.4,96,686,160,720,208C754.3,256,789,288,823,277.3C857.1,267,891,213,926,213.3C960,213,994,267,1029,272C1062.9,277,1097,235,1131,224C1165.7,213,1200,235,1234,240C1268.6,245,1303,235,1337,197.3C1371.4,160,1406,96,1423,64L1440,32L1440,320L1422.9,320C1405.7,320,1371,320,1337,320C1302.9,320,1269,320,1234,320C1200,320,1166,320,1131,320C1097.1,320,1063,320,1029,320C994.3,320,960,320,926,320C891.4,320,857,320,823,320C788.6,320,754,320,720,320C685.7,320,651,320,617,320C582.9,320,549,320,514,320C480,320,446,320,411,320C377.1,320,343,320,309,320C274.3,320,240,320,206,320C171.4,320,137,320,103,320C68.6,320,34,320,17,320L0,320Z">
+                                </path>
+                            </svg>
+                        </picture>
+                        <div class="card-content">
+                            <h3>Jurassic Park</h3>
+                            <span>Author: Michael Crichton</span>
+                            <!-- <p>Velit aut quia fugit et et. Dolorum ea voluptate vel tempore tenetur ipsa quae aut. Ipsum exercitationem iure minima
+                                enim corporis et voluptate.</p> -->
+                        </div>
+                        
+                    </div>
+                    <div class="card">
+                        <picture>
+                            <img src="imgs/library books/gameofthrones.png" height="450px" alt="">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                                <path fill="#fff" fill-opacity="1"
+                                    d="M0,32L17.1,74.7C34.3,117,69,203,103,208C137.1,213,171,139,206,117.3C240,96,274,128,309,165.3C342.9,203,377,245,411,245.3C445.7,245,480,203,514,160C548.6,117,583,75,617,85.3C651.4,96,686,160,720,208C754.3,256,789,288,823,277.3C857.1,267,891,213,926,213.3C960,213,994,267,1029,272C1062.9,277,1097,235,1131,224C1165.7,213,1200,235,1234,240C1268.6,245,1303,235,1337,197.3C1371.4,160,1406,96,1423,64L1440,32L1440,320L1422.9,320C1405.7,320,1371,320,1337,320C1302.9,320,1269,320,1234,320C1200,320,1166,320,1131,320C1097.1,320,1063,320,1029,320C994.3,320,960,320,926,320C891.4,320,857,320,823,320C788.6,320,754,320,720,320C685.7,320,651,320,617,320C582.9,320,549,320,514,320C480,320,446,320,411,320C377.1,320,343,320,309,320C274.3,320,240,320,206,320C171.4,320,137,320,103,320C68.6,320,34,320,17,320L0,320Z">
+                                </path>
+                            </svg>
+                        </picture>
+                        <div class="card-content">
+                            <h3>Game Of Thrones</h3>
+                            <span>Author: George R. R. Martin</span>
+                            <!-- <p>Velit aut quia fugit et et. Dolorum ea voluptate vel tempore tenetur ipsa quae aut. Ipsum exercitationem iure minima
+                                enim corporis et voluptate.</p> -->
+                        </div>
+                        
+                    </div>
+                    <div class="card">
+                        <picture>
+                            <img src="imgs/library books/smile.png" height="450px" alt="">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                                <path fill="#fff" fill-opacity="1"
+                                    d="M0,32L17.1,74.7C34.3,117,69,203,103,208C137.1,213,171,139,206,117.3C240,96,274,128,309,165.3C342.9,203,377,245,411,245.3C445.7,245,480,203,514,160C548.6,117,583,75,617,85.3C651.4,96,686,160,720,208C754.3,256,789,288,823,277.3C857.1,267,891,213,926,213.3C960,213,994,267,1029,272C1062.9,277,1097,235,1131,224C1165.7,213,1200,235,1234,240C1268.6,245,1303,235,1337,197.3C1371.4,160,1406,96,1423,64L1440,32L1440,320L1422.9,320C1405.7,320,1371,320,1337,320C1302.9,320,1269,320,1234,320C1200,320,1166,320,1131,320C1097.1,320,1063,320,1029,320C994.3,320,960,320,926,320C891.4,320,857,320,823,320C788.6,320,754,320,720,320C685.7,320,651,320,617,320C582.9,320,549,320,514,320C480,320,446,320,411,320C377.1,320,343,320,309,320C274.3,320,240,320,206,320C171.4,320,137,320,103,320C68.6,320,34,320,17,320L0,320Z">
+                                </path>
+                            </svg>
+                        </picture>
+                        <div class="card-content">
+                            <h3>Smile</h3>
+                            <span>Author: Raina Telgemeier</span>
+                            <!-- <p>Velit aut quia fugit et et. Dolorum ea voluptate vel tempore tenetur ipsa quae aut. Ipsum exercitationem iure minima
+                                enim corporis et voluptate.</p> -->
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="section3" id="Gallery">
+            <div class="container3">
+                <div class="main-titles">
+                    <!-- <h2>Gallery</h2> -->
+                    <p>Some Of Our<span> Intresting</span> Books</p>
+                </div>
+                <div class="gallery-imgs">
+                    <picture >
+                        <img src="imgs/library gallery/above-all-else-cover-hires.jpg" alt="">
+                        <div class="img-layer">
+                            <h2>Above All Else</h2>
+                            <!-- <p>Hawaiian pizza with ham and pineapple</p> -->
+                        </div>
+                    </picture>
+                    <picture >
+                        <img src="imgs/library gallery/alaska-hires.jpg" alt="">
+                        <div class="img-layer">
+                            <h2>Alaska</h2>
+                            <!-- <p>Levitation pizza on black background</p> -->
+                        </div>
+                    </picture>
+                    <picture >
+                        <img src="imgs/library gallery/faces-of-the-moon-hires.jpg" alt="">
+                        <div class="img-layer">
+                            <h2>Faces Of The Moon</h2>
+                            <!-- <p>Tasty beef steaks flying above cast iron grate with fire flames.</p> -->
+                        </div>
+                    </picture>
+                    <picture >
+                        <img src="imgs/library gallery/family-pack-hires.jpg" alt="">
+                        <div class="img-layer">
+                            <h2>Family Pack</h2>
+                            <!-- <p>Frittata or potato pie in a ceramic plate</p> -->
+                        </div>
+                    </picture>
+                    <picture >
+                        <img src="imgs/library gallery/feathered-dinosaurs-of-china-hires.jpg" alt="">
+                        <div class="img-layer">
+                            <h2>Feathered Dinosaurs Of China</h2>
+                            <!-- <p>grass fed bison hamburger with chips & beer</p> -->
+                        </div>
+                    </picture>
+                    <picture>
+                        <img src="imgs/library gallery/people-of-the-town-cvr.jpg" alt="">
+                        <div class="img-layer">
+                            <h2>The People Of Town</h2>
+                            <!-- <p>Tender and juicy skewers of ground lamb or beef, flavored with aromatic spices and herbs</p> -->
+                        </div>
+                    </picture>
+                    
+                </div>
             </div>
 
+        </section>
 
-           
+        <footer>
+            <div class="container5">
+                <div class="about">
+                    <div class="in-about">
+                        <img src="imgs/bookicon3jpg.jpg" style="border-radius: 50%;" alt="">
+                        <h2>Bibleoticha<span>.</span></h2>
+                    </div>
+                    <p>Bibleoticha is an online library made to make you comfortable while reading books</p>
+                    <h3>Social Media</h3>
+                    <ul class="social-icons">
+                        <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-whatsapp"></i></a></li>
+                    </ul>
+                </div>
+               
+                <div class="footer-detail">
+                    <h3>Get in Touch</h3>
+                    <ul>
+                        <li>
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span>Ahmed Zewail Street - Giza - Egypt</span>
+                        </li>
+
+                        <li>
+                            <i class="fa-solid fa-envelope"></i>
+                            <a href="">bibleoticha@gmail.com</a>
+                        </li>
+
+                        <li>
+                            <i class="fa-solid fa-phone"></i>
+                            <a href="">+01011121314</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
 
 
-    </div>
 
 
 
 
-</body>
+    </body>
 </html>

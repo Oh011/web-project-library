@@ -13,7 +13,14 @@
         <meta name="author" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-        <title>book list</title>
+        <title>book list admin</title>
+
+        <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="css/all.css">
+
+
     
 
 
@@ -30,1010 +37,922 @@
 
 
 
-        <nav>
+ <nav class="nav-bar">
+    <div class="nav-left">
+        <h1><a href="admin_index.html">Bibleoticha<span>.</span></a></h1>
+    </div>
+    <div class="nav-center">
+        <ul>
+            <li class="homee"><a href="index_admin.html" class="home">Home</a></li>
+            <li><a href="about_us.html">About Us</a></li>
+            <li><a href="add_book.html">Add Book</a></li>
+            <li><a href="sign in.html">Sign in</a></li>
+            <li><a href="profile_admin.html">Profile</a></li>
+            <li class="log-out">
+                <form>
+                    <input type="submit" value="Log Out" class="log-out">
+                </form>
+</li>
+        </ul>
+    </div>
+    <div class="nav-right">
+       <a href="contact us.html"> <i class="fa-solid fa-phone"></i></a>
+    </div>
+</nav>
 
-            <ul>
-                <li><a href="index_admin.html">Home</a></li>
-                <li><a href="contact_us.html"> Contact us</a></li>
-                <li><a href="about_us.html">About us</a></li>              
-                <li><a href="add_book.html">Add a new book</a></li>
-                <li><a href="sign in.html">sign in</a></li>
-                <li><a href="list_books.html">view list of books</a></li>
-                <li><a href="profile_admin.html">profile</a></li>
-            
-            </ul>
-        </nav>
 
 
 
 
-        <h2 style="text-align: center;">collections of book in library</h2>
-
-
-
-        <div style="text-align: center; ">
-    
-            <img src="imgs/ad.jpeg" width="350px" >
+ 
+<section class="section1">
+    <div class="container">
+        <div class="left">
+            <h2>Enjoy Reading Our
+                Amazing Books</h2>
+            <!-- <p>Sed autem laudantium dolores. Voluptatem itaque ea consequatur eveniet. Eum quas beatae cumque eum quaerat.</p> -->
+            <div class="gp-btn">
+                <a href="#Gallery" class="main-btn">See Some Of Our Books </a>
+                
+            </div>
         </div>
 
-        <br>
-    
-    
-    
-        <div class="books_desc" >
+        <div class="right">
+            <img src="imgs/open-book-icon-free-vector.jpg" alt="">
+        </div>
+    </div>
+</section>
 
 
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi dicta officiis maxime accusantium sequi 
-                quae facere aperiam, consequuntur harum voluptatum doloremque vitae, necessitatibus obcaecati itaque 
-                perferendis assumenda labore, dignissimos reiciendis tempore eaque tempora fuga corporis. Officia saepe, 
-                quibusdam molestias labore exercitationem soluta tempore nobis accusantium, dicta dolorem ab! Modi, et porro fugit
-                 nostrum repellendus autem minus provident! Mollitia, minima. Alias!</p>
-            
+
+    
+
+
+
+
+
+
+<div class="search-bar">
+
+
+
+  <div class="search">
+    
+      <div class="options">
+    
+        <select>
+          <option>ALL</option>
+          <option>lorem</option>
+          <option>lorem</option>
+          <option>lorem</option>
+          <option>lorem</option>
+          <option>lorem</option>
+        </select>
+      </div>
     
     
+      <div class="search-text">
     
+        <input type="text" placeholder="search for Books">
+      </div>
+    
+      <div class="search-icon">
+    
+    
+        <i class="fa-solid fa-magnifying-glass"></i>
+    
+      </div>
+
+  </div>
+
+
+</div>
+
+
+
+
+
+
+
+
+<h2 class="book-title">History books</h2>
+
+<main class="main1">
+  
+
+    <div class="slider">
+
+      <div class="book">
+
+        <div class="image" id="book" data-bookname="gt">
+          <img src="imgs/library books/gameofthrones.png" alt="">
         </div>
 
 
-        <h2 style="text-align: center;">book categoreis</h2>
+        <div class="info">
 
+          <div class="book-name"><span>Book Name:</span>data structres</div>
 
+          <div class="author">
+            <span>Book Author: </span>Lorem, ipsum.
+          </div>
 
+          <button id="edit"><a href="edit_book.html">Edit</a></button>
+        </div>
 
+      </div>
 
-    
-<hr>
-    
-    
-        <div class="books sections" >
 
-            <h3>fiction books</h3>
-    
-    
-            <div class="item" >
+      <div class="book">
 
+        <div class="image">
+          <img src="imgs/library books/jurassic-book.png" alt="">
+        </div>
 
-                <a href="book1.html"><img src="book_cover imgs/b1.png" width="350px" title="Lorem, ipsum dolor"></a>
-    
-              
-                <br>
-                <p>Lorem ipsum dolor sit.</p>
 
-                <button><a href="edit_book.html">edit</a></button>
-                <button><a href="">delete</a></button>
+        <div class="info">
 
-             
-    
-    
-            </div>
-    
-            <div class="item" >
+          <div class="book-name"><span>Book Name:</span>data structres</div>
 
+          <div class="author">
+            <span>Book Author: </span>Lorem, ipsum.
+          </div>
 
-                <a href="book2.html"><img src="book_cover imgs/b2.png" width="350px" title="Lorem, ipsum dolor"></a>
-    
-              
-                <br>
-                <p>Lorem ipsum dolor sit.</p>
+          <button id="edit"><a href="edit_book.html">Edit</a></button>
+        </div>
 
-                <button><a href="edit_book.html">edit</a></button>
-                <button><a href="">delete</a></button>
+      </div>
 
-              
-    
-    
-            </div>
-    
-            <div class="item" >
 
+      <div class="book">
 
-                <a href="book3.html"><img src="book_cover imgs/b3.png" width="350px" title="Lorem, ipsum dolor"></a>
-    
-              
-                <br>
-                <p>Lorem ipsum dolor sit.</p>
+        <div class="image">
+          <img src="imgs/library books/silentpatient.png" alt="">
+        </div>
 
 
-                <button><a href="edit_book.html">edit</a></button>
-                <button><a href="">delete</a></button>
+        <div class="info">
 
-           
-    
-    
-            </div>
-    
-            <div class="item" >
+          <div class="book-name"><span>Book Name:</span>data structres</div>
 
+          <div class="author">
+            <span>Book Author: </span>Lorem, ipsum.
+          </div>
 
-                <a href="book4.html"><img src="book_cover imgs/b4.png" width="350px" title="Lorem, ipsum dolor"></a>
-    
-              
-                <br>
-                <p>Lorem ipsum dolor sit.</p>
+          <button id="edit"><a href="edit_book.html">Edit</a></button>
+        </div>
 
+      </div>
 
-                <button><a href="edit_book.html">edit</a></button>
-                <button><a href="">delete</a></button>
 
-         
-    
-    
-            </div>
-    
-            <div class="item" >
+      <div class="book">
 
+        <div class="image">
+          <img src="imgs/library books/smile.png" alt="">
+        </div>
 
-                <a href="book5.html"><img src="book_cover imgs/b5.png" width="350px" title="Lorem, ipsum dolor"></a>
-    
-              
-                <br>
-                <p>Lorem ipsum dolor sit.</p>
 
+        <div class="info">
 
-                <button><a href="edit_book.html">edit</a></button>
-                <button><a href="">delete</a></button>
-         
-    
-    
-            </div>
-    
-            <div class="item" >
+          <div class="book-name"><span>Book Name:</span>data structres</div>
 
+          <div class="author">
+            <span>Book Author: </span>Lorem, ipsum.
+          </div>
 
-                <a href="book6.html"><img src="book_cover imgs/b6.png" width="350px" title="Lorem, ipsum dolor"></a>
-    
-              
-                <br>
-                <p>Lorem ipsum dolor sit.</p>
+          <button id="edit"><a href="edit_book.html">Edit</a></button>
+        </div>
 
-                <button><a href="edit_book.html">edit</a></button>
-                <button><a href="">delete</a></button>
+      </div>
 
-         
-    
-    
-            </div>
-    
-            <div class="item" >
 
+      <div class="book">
 
-                <a href="book7.html"><img src="book_cover imgs/b7.png" width="350px" title="Lorem, ipsum dolor"></a>
-    
-              
-                <br>
-                <p>Lorem ipsum dolor sit.</p>
+        <div class="image">
+          <img src="imgs/library books/gameofthrones.png" alt="">
+        </div>
 
-                <button><a href="edit_book.html">edit</a></button>
-                <button><a href="">delete</a></button>
 
-         
-    
-    
-            </div>
-    
-            <div class="item" >
+        <div class="info">
 
+          <div class="book-name"><span>Book Name:</span>data structres</div>
 
-                <a href="book8.html"><img src="book_cover imgs/b8.png" width="350px" title="Lorem, ipsum dolor"></a>
-    
-              
-                <br>
-                <p>Lorem ipsum dolor sit.</p>
+          <div class="author">
+            <span>Book Author: </span>Lorem, ipsum.
+          </div>
 
-                <button><a href="edit_book.html">edit</a></button>
-                <button><a href="">delete</a></button>
+          <button id="edit"><a href="edit_book.html">Edit</a></button>
+        </div>
 
-         
-    
-    
-            </div>
-    
-            <div class="item" >
+      </div>
 
 
-                <a href="book9.html"><img src="book_cover imgs/b9.png" width="350px" title="Lorem, ipsum dolor"></a>
-    
-              
-                <br>
-                <p>Lorem ipsum dolor sit.</p>
+      <div class="book">
 
+        <div class="image">
+          <img src="imgs/library books/jurassic-book.png" alt="">
+        </div>
 
-                <button><a href="edit_book.html">edit</a></button>
-                <button><a href="">delete</a></button>
 
-         
-    
-    
-            </div>
-    
-            <div class="item" >
+        <div class="info">
 
+          <div class="book-name"><span>Book Name:</span>data structres</div>
 
-                <a href="book10.html"><img src="book_cover imgs/b10.png" width="350px" title="Lorem, ipsum dolor"></a>
-    
-              
-                <br>
-                <p>Lorem ipsum dolor sit.</p>
+          <div class="author">
+            <span>Book Author: </span>Lorem, ipsum.
+          </div>
 
-                <button><a href="edit_book.html">edit</a></button>
-                <button><a href="">delete</a></button>
+          <button id="edit"><a href="edit_book.html">Edit</a></button>
+        </div>
 
-         
-    
-    
-            </div>
+      </div>
 
 
-            <div class="clr">
+      <div class="book">
 
-            </div>
+        <div class="image">
+          <img src="imgs/library books/silentpatient.png" alt="">
+        </div>
 
 
-            </div>
+        <div class="info">
 
+          <div class="book-name"><span>Book Name:</span>data structres</div>
 
-            <hr>
-    
-    
-        <div class="books sections" >
+          <div class="author">
+            <span>Book Author: </span>Lorem, ipsum.
+          </div>
 
-            <h3>fiction books</h3>
-    
-    
-            <div class="item" >
+          <button id="edit"><a href="edit_book.html">Edit</a></button>
+        </div>
 
+      </div>
 
-                <a href="book1.html"><img src="book_cover imgs/b1.png" width="350px" title="Lorem, ipsum dolor"></a>
-    
-              
-                <br>
-                <p>Lorem ipsum dolor sit.</p>
 
-                <button><a href="edit_book.html">edit</a></button>
-                <button><a href="">delete</a></button>
+      <div class="book">
 
-             
-    
-    
-            </div>
-    
-            <div class="item" >
+        <div class="image">
+          <img src="imgs/library books/smile.png" alt="">
+        </div>
 
 
-                <a href="book2.html"><img src="book_cover imgs/b2.png" width="350px" title="Lorem, ipsum dolor"></a>
-    
-              
-                <br>
-                <p>Lorem ipsum dolor sit.</p>
+        <div class="info">
 
-                <button><a href="edit_book.html">edit</a></button>
-                <button><a href="">delete</a></button>
+          <div class="book-name"><span>Book Name:</span>data structres</div>
 
-              
-    
-    
-            </div>
-    
-            <div class="item" >
+          <div class="author">
+            <span>Book Author: </span>Lorem, ipsum.
+          </div>
 
+          <button id="edit"><a href="edit_book.html">Edit</a></button>
+        </div>
 
-                <a href="book3.html"><img src="book_cover imgs/b3.png" width="350px" title="Lorem, ipsum dolor"></a>
-    
-              
-                <br>
-                <p>Lorem ipsum dolor sit.</p>
+      </div>
 
 
-                <button><a href="edit_book.html">edit</a></button>
-                <button><a href="">delete</a></button>
+      <div class="book">
 
-           
-    
-    
-            </div>
-    
-            <div class="item" >
+        <div class="image">
+          <img src="imgs/library books/gameofthrones.png" alt="">
+        </div>
 
 
-                <a href="book4.html"><img src="book_cover imgs/b4.png" width="350px" title="Lorem, ipsum dolor"></a>
-    
-              
-                <br>
-                <p>Lorem ipsum dolor sit.</p>
+        <div class="info">
 
+          <div class="book-name"><span>Book Name:</span>data structres</div>
 
-                <button><a href="edit_book.html">edit</a></button>
-                <button><a href="">delete</a></button>
+          <div class="author">
+            <span>Book Author: </span>Lorem, ipsum.
+          </div>
 
-         
-    
-    
-            </div>
-    
-            <div class="item" >
+          <button id="edit"><a href="edit_book.html">Edit</a></button>
+        </div>
 
+      </div>
 
-                <a href="book5.html"><img src="book_cover imgs/b5.png" width="350px" title="Lorem, ipsum dolor"></a>
-    
-              
-                <br>
-                <p>Lorem ipsum dolor sit.</p>
 
+      <div class="book">
 
-                <button><a href="edit_book.html">edit</a></button>
-                <button><a href="">delete</a></button>
-         
-    
-    
-            </div>
-    
-            <div class="item" >
+        <div class="image">
+          <img src="imgs/library books/jurassic-book.png" alt="">
+        </div>
 
 
-                <a href="book6.html"><img src="book_cover imgs/b6.png" width="350px" title="Lorem, ipsum dolor"></a>
-    
-              
-                <br>
-                <p>Lorem ipsum dolor sit.</p>
+        <div class="info">
 
-                <button><a href="edit_book.html">edit</a></button>
-                <button><a href="">delete</a></button>
+          <div class="book-name"><span>Book Name:</span>data structres</div>
 
-         
-    
-    
-            </div>
-    
-            <div class="item" >
+          <div class="author">
+            <span>Book Author: </span>Lorem, ipsum.
+          </div>
 
+          <button id="edit"><a href="edit_book.html">Edit</a></button>
+        </div>
 
-                <a href="book7.html"><img src="book_cover imgs/b7.png" width="350px" title="Lorem, ipsum dolor"></a>
-    
-              
-                <br>
-                <p>Lorem ipsum dolor sit.</p>
+      </div>
 
-                <button><a href="edit_book.html">edit</a></button>
-                <button><a href="">delete</a></button>
+      <div class="book">
 
-         
-    
-    
-            </div>
-    
-            <div class="item" >
+        <div class="image">
+          <img src="imgs/library books/silentpatient.png" alt="">
+        </div>
 
 
-                <a href="book8.html"><img src="book_cover imgs/b8.png" width="350px" title="Lorem, ipsum dolor"></a>
-    
-              
-                <br>
-                <p>Lorem ipsum dolor sit.</p>
+        <div class="info">
 
-                <button><a href="edit_book.html">edit</a></button>
-                <button><a href="">delete</a></button>
+          <div class="book-name"><span>Book Name:</span>data structres</div>
 
-         
-    
-    
-            </div>
-    
-            <div class="item" >
+          <div class="author">
+            <span>Book Author: </span>Lorem, ipsum.
+          </div>
 
+          <button id="edit"><a href="edit_book.html">Edit</a></button>
+        </div>
 
-                <a href="book9.html"><img src="book_cover imgs/b9.png" width="350px" title="Lorem, ipsum dolor"></a>
-    
-              
-                <br>
-                <p>Lorem ipsum dolor sit.</p>
+      </div>
+      
+     
 
+      
 
-                <button><a href="edit_book.html">edit</a></button>
-                <button><a href="">delete</a></button>
 
-         
-    
-    
-            </div>
+
     
-            <div class="item" >
 
 
-                <a href="book10.html"><img src="book_cover imgs/b10.png" width="350px" title="Lorem, ipsum dolor"></a>
-    
-              
-                <br>
-                <p>Lorem ipsum dolor sit.</p>
+      <div class="arrow">
+        
+        <button class="left" onclick="left()"> &lt </button>
+        <button class="right"  onclick="right()"> &gt </button>
+      </div>
 
-                <button><a href="edit_book.html">edit</a></button>
-                <button><a href="">delete</a></button>
+    </div>
+  </main>
 
-         
-    
-    
-            </div>
 
 
-            <div class="clr">
+  <h2 class="book-title">Romantic books</h2>
 
-            </div>
 
 
-            </div>
 
+  
+<main class="main1">
+  
 
+  <div class="slider">
 
-            <hr>
-    
-    
-        <div class="books sections" >
+    <div class="book">
 
-            <h3>fiction books</h3>
-    
-    
-            <div class="item" >
+      <div class="image">
+        <img src="imgs/library books/gameofthrones.png" alt="">
+      </div>
 
 
-                <a href="book1.html"><img src="book_cover imgs/b1.png" width="350px" title="Lorem, ipsum dolor"></a>
-    
-              
-                <br>
-                <p>Lorem ipsum dolor sit.</p>
+      <div class="info">
 
-                <button><a href="edit_book.html">edit</a></button>
-                <button><a href="">delete</a></button>
+        <div class="book-name"><span>Book Name:</span>data structres</div>
 
-             
-    
-    
-            </div>
-    
-            <div class="item" >
+        <div class="author">
+          <span>Book Author: </span>Lorem, ipsum.
+        </div>
 
+        <button id="edit"><a href="edit_book.html">Edit</a></button>
+      </div>
 
-                <a href="book2.html"><img src="book_cover imgs/b2.png" width="350px" title="Lorem, ipsum dolor"></a>
-    
-              
-                <br>
-                <p>Lorem ipsum dolor sit.</p>
+    </div>
 
-                <button><a href="edit_book.html">edit</a></button>
-                <button><a href="">delete</a></button>
 
-              
-    
-    
-            </div>
-    
-            <div class="item" >
+    <div class="book">
 
+      <div class="image">
+        <img src="imgs/library books/gameofthrones.png" alt="">
+      </div>
 
-                <a href="book3.html"><img src="book_cover imgs/b3.png" width="350px" title="Lorem, ipsum dolor"></a>
-    
-              
-                <br>
-                <p>Lorem ipsum dolor sit.</p>
 
+      <div class="info">
 
-                <button><a href="edit_book.html">edit</a></button>
-                <button><a href="">delete</a></button>
+        <div class="book-name"><span>Book Name:</span>data structres</div>
 
-           
-    
-    
-            </div>
-    
-            <div class="item" >
+        <div class="author">
+          <span>Book Author: </span>Lorem, ipsum.
+        </div>
 
+        <button id="edit"><a href="edit_book.html">Edit</a></button>
+      </div>
 
-                <a href="book4.html"><img src="book_cover imgs/b4.png" width="350px" title="Lorem, ipsum dolor"></a>
-    
-              
-                <br>
-                <p>Lorem ipsum dolor sit.</p>
+    </div>
 
 
-                <button><a href="edit_book.html">edit</a></button>
-                <button><a href="">delete</a></button>
+    <div class="book">
 
-         
-    
-    
-            </div>
-    
-            <div class="item" >
+      <div class="image">
+        <img src="imgs/library books/gameofthrones.png" alt="">
+      </div>
 
 
-                <a href="book5.html"><img src="book_cover imgs/b5.png" width="350px" title="Lorem, ipsum dolor"></a>
-    
-              
-                <br>
-                <p>Lorem ipsum dolor sit.</p>
+      <div class="info">
 
+        <div class="book-name"><span>Book Name:</span>data structres</div>
 
-                <button><a href="edit_book.html">edit</a></button>
-                <button><a href="">delete</a></button>
-         
-    
-    
-            </div>
-    
-            <div class="item" >
+        <div class="author">
+          <span>Book Author: </span>Lorem, ipsum.
+        </div>
 
+        <button id="edit"><a href="edit_book.html">Edit</a></button>
+      </div>
 
-                <a href="book6.html"><img src="book_cover imgs/b6.png" width="350px" title="Lorem, ipsum dolor"></a>
-    
-              
-                <br>
-                <p>Lorem ipsum dolor sit.</p>
+    </div>
 
-                <button><a href="edit_book.html">edit</a></button>
-                <button><a href="">delete</a></button>
 
-         
-    
-    
-            </div>
-    
-            <div class="item" >
+    <div class="book">
 
+      <div class="image">
+        <img src="imgs/library books/gameofthrones.png" alt="">
+      </div>
 
-                <a href="book7.html"><img src="book_cover imgs/b7.png" width="350px" title="Lorem, ipsum dolor"></a>
-    
-              
-                <br>
-                <p>Lorem ipsum dolor sit.</p>
 
-                <button><a href="edit_book.html">edit</a></button>
-                <button><a href="">delete</a></button>
+      <div class="info">
 
-         
-    
-    
-            </div>
-    
-            <div class="item" >
+        <div class="book-name"><span>Book Name:</span>data structres</div>
 
+        <div class="author">
+          <span>Book Author: </span>Lorem, ipsum.
+        </div>
 
-                <a href="book8.html"><img src="book_cover imgs/b8.png" width="350px" title="Lorem, ipsum dolor"></a>
-    
-              
-                <br>
-                <p>Lorem ipsum dolor sit.</p>
+        <button id="edit"><a href="edit_book.html">Edit</a></button>
+      </div>
 
-                <button><a href="edit_book.html">edit</a></button>
-                <button><a href="">delete</a></button>
+    </div>
 
-         
-    
-    
-            </div>
-    
-            <div class="item" >
 
+    <div class="book">
 
-                <a href="book9.html"><img src="book_cover imgs/b9.png" width="350px" title="Lorem, ipsum dolor"></a>
-    
-              
-                <br>
-                <p>Lorem ipsum dolor sit.</p>
+      <div class="image">
+        <img src="imgs/library books/gameofthrones.png" alt="">
+      </div>
 
 
-                <button><a href="edit_book.html">edit</a></button>
-                <button><a href="">delete</a></button>
+      <div class="info">
 
-         
-    
-    
-            </div>
-    
-            <div class="item" >
+        <div class="book-name"><span>Book Name:</span>data structres</div>
 
+        <div class="author">
+          <span>Book Author: </span>Lorem, ipsum.
+        </div>
 
-                <a href="book10.html"><img src="book_cover imgs/b10.png" width="350px" title="Lorem, ipsum dolor"></a>
-    
-              
-                <br>
-                <p>Lorem ipsum dolor sit.</p>
+        <button id="edit"><a href="edit_book.html">Edit</a></button>
+      </div>
 
-                <button><a href="edit_book.html">edit</a></button>
-                <button><a href="">delete</a></button>
+    </div>
 
-         
-    
-    
-            </div>
 
+    <div class="book">
 
-            <div class="clr">
+      <div class="image">
+        <img src="imgs/library books/gameofthrones.png" alt="">
+      </div>
 
-            </div>
 
+      <div class="info">
 
-            </div>
+        <div class="book-name"><span>Book Name:</span>data structres</div>
 
+        <div class="author">
+          <span>Book Author: </span>Lorem, ipsum.
+        </div>
 
+        <button id="edit"><a href="edit_book.html">Edit</a></button>
+      </div>
 
-            <hr>
-    
-    
-        <div class="books sections" >
+    </div>
 
-            <h3>fiction books</h3>
-    
-    
-            <div class="item" >
 
+    <div class="book">
 
-                <a href="book1.html"><img src="book_cover imgs/b1.png" width="350px" title="Lorem, ipsum dolor"></a>
-    
-              
-                <br>
-                <p>Lorem ipsum dolor sit.</p>
+      <div class="image">
+        <img src="imgs/library books/gameofthrones.png" alt="">
+      </div>
 
-                <button><a href="edit_book.html">edit</a></button>
-                <button><a href="">delete</a></button>
 
-             
-    
-    
-            </div>
-    
-            <div class="item" >
+      <div class="info">
 
+        <div class="book-name"><span>Book Name:</span>data structres</div>
 
-                <a href="book2.html"><img src="book_cover imgs/b2.png" width="350px" title="Lorem, ipsum dolor"></a>
-    
-              
-                <br>
-                <p>Lorem ipsum dolor sit.</p>
+        <div class="author">
+          <span>Book Author: </span>Lorem, ipsum.
+        </div>
 
-                <button><a href="edit_book.html">edit</a></button>
-                <button><a href="">delete</a></button>
+        <button id="edit"><a href="edit_book.html">Edit</a></button>
+      </div>
 
-              
-    
-    
-            </div>
-    
-            <div class="item" >
+    </div>
 
 
-                <a href="book3.html"><img src="book_cover imgs/b3.png" width="350px" title="Lorem, ipsum dolor"></a>
-    
-              
-                <br>
-                <p>Lorem ipsum dolor sit.</p>
+    <div class="book">
 
+      <div class="image">
+        <img src="imgs/library books/gameofthrones.png" alt="">
+      </div>
 
-                <button><a href="edit_book.html">edit</a></button>
-                <button><a href="">delete</a></button>
 
-           
-    
-    
-            </div>
-    
-            <div class="item" >
+      <div class="info">
 
+        <div class="book-name"><span>Book Name:</span>data structres</div>
 
-                <a href="book4.html"><img src="book_cover imgs/b4.png" width="350px" title="Lorem, ipsum dolor"></a>
-    
-              
-                <br>
-                <p>Lorem ipsum dolor sit.</p>
+        <div class="author">
+          <span>Book Author: </span>Lorem, ipsum.
+        </div>
 
+        <button id="edit"><a href="edit_book.html">Edit</a></button>
+      </div>
 
-                <button><a href="edit_book.html">edit</a></button>
-                <button><a href="">delete</a></button>
+    </div>
 
-         
-    
-    
-            </div>
-    
-            <div class="item" >
 
+    <div class="book">
 
-                <a href="book5.html"><img src="book_cover imgs/b5.png" width="350px" title="Lorem, ipsum dolor"></a>
-    
-              
-                <br>
-                <p>Lorem ipsum dolor sit.</p>
+      <div class="image">
+        <img src="imgs/library books/gameofthrones.png" alt="">
+      </div>
 
 
-                <button><a href="edit_book.html">edit</a></button>
-                <button><a href="">delete</a></button>
-         
-    
-    
-            </div>
-    
-            <div class="item" >
+      <div class="info">
 
+        <div class="book-name"><span>Book Name:</span>data structres</div>
 
-                <a href="book6.html"><img src="book_cover imgs/b6.png" width="350px" title="Lorem, ipsum dolor"></a>
-    
-              
-                <br>
-                <p>Lorem ipsum dolor sit.</p>
+        <div class="author">
+          <span>Book Author: </span>Lorem, ipsum.
+        </div>
 
-                <button><a href="edit_book.html">edit</a></button>
-                <button><a href="">delete</a></button>
+        <button id="edit"><a href="edit_book.html">Edit</a></button>
+      </div>
 
-         
-    
-    
-            </div>
-    
-            <div class="item" >
+    </div>
 
 
-                <a href="book7.html"><img src="book_cover imgs/b7.png" width="350px" title="Lorem, ipsum dolor"></a>
-    
-              
-                <br>
-                <p>Lorem ipsum dolor sit.</p>
+    <div class="book">
 
-                <button><a href="edit_book.html">edit</a></button>
-                <button><a href="">delete</a></button>
+      <div class="image">
+        <img src="imgs/library books/gameofthrones.png" alt="">
+      </div>
 
-         
-    
-    
-            </div>
-    
-            <div class="item" >
 
+      <div class="info">
 
-                <a href="book8.html"><img src="book_cover imgs/b8.png" width="350px" title="Lorem, ipsum dolor"></a>
-    
-              
-                <br>
-                <p>Lorem ipsum dolor sit.</p>
+        <div class="book-name"><span>Book Name:</span>data structres</div>
 
-                <button><a href="edit_book.html">edit</a></button>
-                <button><a href="">delete</a></button>
+        <div class="author">
+          <span>Book Author: </span>Lorem, ipsum.
+        </div>
 
-         
-    
-    
-            </div>
-    
-            <div class="item" >
+        <button id="edit"><a href="edit_book.html">Edit</a></button>
+      </div>
 
+    </div>
 
-                <a href="book9.html"><img src="book_cover imgs/b9.png" width="350px" title="Lorem, ipsum dolor"></a>
-    
-              
-                <br>
-                <p>Lorem ipsum dolor sit.</p>
+    <div class="book">
 
+      <div class="image">
+        <img src="imgs/library books/gameofthrones.png" alt="">
+      </div>
 
-                <button><a href="edit_book.html">edit</a></button>
-                <button><a href="">delete</a></button>
 
-         
-    
-    
-            </div>
-    
-            <div class="item" >
+      <div class="info">
 
+        <div class="book-name"><span>Book Name:</span>data structres</div>
 
-                <a href="book10.html"><img src="book_cover imgs/b10.png" width="350px" title="Lorem, ipsum dolor"></a>
-    
-              
-                <br>
-                <p>Lorem ipsum dolor sit.</p>
+        <div class="author">
+          <span>Book Author: </span>Lorem, ipsum.
+        </div>
 
-                <button><a href="edit_book.html">edit</a></button>
-                <button><a href="">delete</a></button>
+        <button id="edit"><a href="edit_book.html">Edit</a></button>
+      </div>
 
-         
+    </div>
     
+   
+
     
-            </div>
 
 
-            <div class="clr">
 
-            </div>
+  
 
 
-            </div>
+    <div class="arrow">
+      
+      <button class="left" onclick="left()"> &lt </button>
+      <button class="right"  onclick="right()"> &gt </button>
+    </div>
 
+  </div>
+</main>
 
-            <hr>
-    
-    
-        <div class="books sections" >
 
-            <h3>fiction books</h3>
-    
-    
-            <div class="item" >
 
+<h2 class="book-title">Programming books</h2>
 
-                <a href="book1.html"><img src="book_cover imgs/b1.png" width="350px" title="Lorem, ipsum dolor"></a>
-    
-              
-                <br>
-                <p>Lorem ipsum dolor sit.</p>
 
-                <button><a href="edit_book.html">edit</a></button>
-                <button><a href="">delete</a></button>
+<main class="main1">
+  
 
-             
-    
-    
-            </div>
-    
-            <div class="item" >
+  <div class="slider">
 
+    <div class="book">
 
-                <a href="book2.html"><img src="book_cover imgs/b2.png" width="350px" title="Lorem, ipsum dolor"></a>
-    
-              
-                <br>
-                <p>Lorem ipsum dolor sit.</p>
+      <div class="image">
+        <img src="imgs/library books/gameofthrones.png" alt="">
+      </div>
 
-                <button><a href="edit_book.html">edit</a></button>
-                <button><a href="">delete</a></button>
 
-              
-    
-    
-            </div>
-    
-            <div class="item" >
+      <div class="info">
 
+        <div class="book-name"><span>Book Name:</span>data structres</div>
 
-                <a href="book3.html"><img src="book_cover imgs/b3.png" width="350px" title="Lorem, ipsum dolor"></a>
-    
-              
-                <br>
-                <p>Lorem ipsum dolor sit.</p>
+        <div class="author">
+          <span>Book Author: </span>Lorem, ipsum.
+        </div>
 
+        <button id="edit"><a href="edit_book.html">Edit</a></button>
+      </div>
 
-                <button><a href="edit_book.html">edit</a></button>
-                <button><a href="">delete</a></button>
+    </div>
 
-           
-    
-    
-            </div>
-    
-            <div class="item" >
 
+    <div class="book">
 
-                <a href="book4.html"><img src="book_cover imgs/b4.png" width="350px" title="Lorem, ipsum dolor"></a>
-    
-              
-                <br>
-                <p>Lorem ipsum dolor sit.</p>
+      <div class="image">
+        <img src="imgs/library books/gameofthrones.png" alt="">
+      </div>
 
 
-                <button><a href="edit_book.html">edit</a></button>
-                <button><a href="">delete</a></button>
+      <div class="info">
 
-         
-    
-    
-            </div>
-    
-            <div class="item" >
+        <div class="book-name"><span>Book Name:</span>data structres</div>
 
+        <div class="author">
+          <span>Book Author: </span>Lorem, ipsum.
+        </div>
 
-                <a href="book5.html"><img src="book_cover imgs/b5.png" width="350px" title="Lorem, ipsum dolor"></a>
-    
-              
-                <br>
-                <p>Lorem ipsum dolor sit.</p>
+        <button id="edit"><a href="edit_book.html">Edit</a></button>
+      </div>
 
+    </div>
 
-                <button><a href="edit_book.html">edit</a></button>
-                <button><a href="">delete</a></button>
-         
-    
-    
-            </div>
-    
-            <div class="item" >
 
+    <div class="book">
 
-                <a href="book6.html"><img src="book_cover imgs/b6.png" width="350px" title="Lorem, ipsum dolor"></a>
-    
-              
-                <br>
-                <p>Lorem ipsum dolor sit.</p>
+      <div class="image">
+        <img src="imgs/library books/gameofthrones.png" alt="">
+      </div>
 
-                <button><a href="edit_book.html">edit</a></button>
-                <button><a href="">delete</a></button>
 
-         
-    
-    
-            </div>
-    
-            <div class="item" >
+      <div class="info">
 
+        <div class="book-name"><span>Book Name:</span>data structres</div>
 
-                <a href="book7.html"><img src="book_cover imgs/b7.png" width="350px" title="Lorem, ipsum dolor"></a>
-    
-              
-                <br>
-                <p>Lorem ipsum dolor sit.</p>
+        <div class="author">
+          <span>Book Author: </span>Lorem, ipsum.
+        </div>
 
-                <button><a href="edit_book.html">edit</a></button>
-                <button><a href="">delete</a></button>
+        <button id="edit"><a href="edit_book.html">Edit</a></button>
+      </div>
 
-         
-    
-    
-            </div>
-    
-            <div class="item" >
+    </div>
 
 
-                <a href="book8.html"><img src="book_cover imgs/b8.png" width="350px" title="Lorem, ipsum dolor"></a>
-    
-              
-                <br>
-                <p>Lorem ipsum dolor sit.</p>
+    <div class="book">
 
-                <button><a href="edit_book.html">edit</a></button>
-                <button><a href="">delete</a></button>
+      <div class="image">
+        <img src="imgs/library books/gameofthrones.png" alt="">
+      </div>
 
-         
-    
-    
-            </div>
-    
-            <div class="item" >
 
+      <div class="info">
 
-                <a href="book9.html"><img src="book_cover imgs/b9.png" width="350px" title="Lorem, ipsum dolor"></a>
-    
-              
-                <br>
-                <p>Lorem ipsum dolor sit.</p>
+        <div class="book-name"><span>Book Name:</span>data structres</div>
 
+        <div class="author">
+          <span>Book Author: </span>Lorem, ipsum.
+        </div>
 
-                <button><a href="edit_book.html">edit</a></button>
-                <button><a href="">delete</a></button>
+        <button id="edit"><a href="edit_book.html">Edit</a></button>
+      </div>
 
-         
-    
-    
-            </div>
-    
-            <div class="item" >
+    </div>
 
 
-                <a href="book10.html"><img src="book_cover imgs/b10.png" width="350px" title="Lorem, ipsum dolor"></a>
-    
-              
-                <br>
-                <p>Lorem ipsum dolor sit.</p>
+    <div class="book">
 
-                <button><a href="edit_book.html">edit</a></button>
-                <button><a href="">delete</a></button>
+      <div class="image">
+        <img src="imgs/library books/gameofthrones.png" alt="">
+      </div>
 
-         
+
+      <div class="info">
+
+        <div class="book-name"><span>Book Name:</span>data structres</div>
+
+        <div class="author">
+          <span>Book Author: </span>Lorem, ipsum.
+        </div>
+
+        <button id="edit"><a href="edit_book.html">Edit</a></button>
+      </div>
+
+    </div>
+
+
+    <div class="book">
+
+      <div class="image">
+        <img src="imgs/library books/gameofthrones.png" alt="">
+      </div>
+
+
+      <div class="info">
+
+        <div class="book-name"><span>Book Name:</span>data structres</div>
+
+        <div class="author">
+          <span>Book Author: </span>Lorem, ipsum.
+        </div>
+
+        <button id="edit"><a href="edit_book.html">Edit</a></button>
+      </div>
+
+    </div>
+
+
+    <div class="book">
+
+      <div class="image">
+        <img src="imgs/library books/gameofthrones.png" alt="">
+      </div>
+
+
+      <div class="info">
+
+        <div class="book-name"><span>Book Name:</span>data structres</div>
+
+        <div class="author">
+          <span>Book Author: </span>Lorem, ipsum.
+        </div>
+
+        <button id="edit"><a href="edit_book.html">Edit</a></button>
+      </div>
+
+    </div>
+
+
+    <div class="book">
+
+      <div class="image">
+        <img src="imgs/library books/gameofthrones.png" alt="">
+      </div>
+
+
+      <div class="info">
+
+        <div class="book-name"><span>Book Name:</span>data structres</div>
+
+        <div class="author">
+          <span>Book Author: </span>Lorem, ipsum.
+        </div>
+
+        <button id="edit"><a href="edit_book.html">Edit</a></button>
+      </div>
+
+    </div>
+
+
+    <div class="book">
+
+      <div class="image">
+        <img src="imgs/library books/gameofthrones.png" alt="">
+      </div>
+
+
+      <div class="info">
+
+        <div class="book-name"><span>Book Name:</span>data structres</div>
+
+        <div class="author">
+          <span>Book Author: </span>Lorem, ipsum.
+        </div>
+
+        <button id="edit"><a href="edit_book.html">Edit</a></button>
+      </div>
+
+    </div>
+
+
+    <div class="book">
+
+      <div class="image">
+        <img src="imgs/library books/gameofthrones.png" alt="">
+      </div>
+
+
+      <div class="info">
+
+        <div class="book-name"><span>Book Name:</span>data structres</div>
+
+        <div class="author">
+          <span>Book Author: </span>Lorem, ipsum.
+        </div>
+
+        <button id="edit"><a href="edit_book.html">Edit</a></button>
+      </div>
+
+    </div>
+
+    <div class="book">
+
+      <div class="image">
+        <img src="imgs/library books/gameofthrones.png" alt="">
+      </div>
+
+
+      <div class="info">
+
+        <div class="book-name"><span>Book Name:</span>data structres</div>
+
+        <div class="author">
+          <span>Book Author: </span>Lorem, ipsum.
+        </div>
+
+        <button id="edit"><a href="edit_book.html">Edit</a></button>
+      </div>
+
+    </div>
     
+   
+
     
-            </div>
 
 
-            <div class="clr">
 
-            </div>
+  
 
 
-            </div>
+    <div class="arrow">
+      
+      <button class="left" onclick="left()"> &lt </button>
+      <button class="right"  onclick="right()"> &gt </button>
+    </div>
 
+  </div>
+</main>
 
-            <hr>
-    
+
+
+<footer>
+  <div class="container5">
+      <div class="about">
+          <div class="in-about">
+              <img src="imgs/bookicon3jpg.jpg" style="border-radius: 50%;" alt="">
+              <h2>Bibleoticha<span>.</span></h2>
+          </div>
+          <p>Bibleoticha is an online library made to make you comfortable while reading books</p>
+          <h3>Social Media</h3>
+          <ul class="social-icons">
+              <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+              <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+              <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+              <li><a href=""><i class="fa-brands fa-whatsapp"></i></a></li>
+          </ul>
+      </div>
+     
+      <div class="footer-detail">
+          <h3>Get in Touch</h3>
+          <ul>
+              <li>
+                  <i class="fa-solid fa-location-dot"></i>
+                  <span>Ahmed Zewail Street - Giza - Egypt</span>
+              </li>
+
+              <li>
+                  <i class="fa-solid fa-envelope"></i>
+                  <a href="">bibleoticha@gmail.com</a>
+              </li>
+
+              <li>
+                  <i class="fa-solid fa-phone"></i>
+                  <a href="">+01011121314</a>
+              </li>
+          </ul>
+      </div>
+  </div>
+</footer>
+
+
+
+
+
+
+
+  <script src="slide.js"></script>
+
 </html>
