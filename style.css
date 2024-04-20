@@ -1160,6 +1160,7 @@ footer .container5{
     /* top: -20px; */
     overflow: auto;
     font-weight: 600;
+
     
 }
 
@@ -1180,6 +1181,7 @@ footer .container5{
     /* border-radius: 10%; */
     
    border: 1px rgba(58, 70, 100,1) solid;
+   border-radius: 10%;
 
     display: flex;
 
@@ -1198,6 +1200,8 @@ footer .container5{
     height:500px;
     width: 30%;
     border: 1px rgba(58, 70, 100,1) solid;
+   border-radius: 10%;
+
 
     display: flex;
 
@@ -1214,6 +1218,8 @@ footer .container5{
     width:40%;
     display: flex;
     border: 1px rgba(58, 70, 100,1) solid;
+   border-radius: 10%;
+
 
 
 }
@@ -1226,6 +1232,8 @@ footer .container5{
     width:40%;
     display: flex;
     border: 2px rgba(58, 70, 100,1) solid;
+   border-radius: 10%;
+
 }
 
 
@@ -1881,7 +1889,6 @@ main{
 
 /* =================================================== */
 
-
 /* profile styling */
 
 
@@ -1897,6 +1904,7 @@ main{
 
  .about-profile .inside-left{
     background-image: url(imgs/about.jpg);
+    background-repeat: no-repeat;
     width: 100%;
     height: 100%;
     position: absolute;

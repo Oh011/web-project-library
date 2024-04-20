@@ -565,6 +565,7 @@ else{
       this.author=author;
       this.category=category;
       this.borrowed="false"
+      
 
     }
   }
@@ -619,7 +620,7 @@ else{
 
 else if(location.pathname=="/C:/web-project-library/edit_book.html"){
 
-
+console.log('hi edit');
 
 const od_book_id=document.getElementById("old_book_id")
 const book_id = document.getElementById('book_id');
@@ -627,6 +628,11 @@ const book_name = document.getElementById('book_name');
 const book_author=document.getElementById("book_author");
 
 
+
+let arr = JSON.parse(window.localStorage.getItem('books')) || [];
+let lb = JSON.parse(window.localStorage.getItem('borrowed')) || [];
+console.log(arr);
+console.log(lb);
 
 
 
@@ -693,12 +699,12 @@ const book_author=document.getElementById("book_author");
 
 
     
-    let arr = JSON.parse(window.localStorage.getItem('books')) || [];
+
 
 
     for(var i=0 ; i<arr.length ; ++i){
 
-      if(arr[i].id==old_id_val){
+      if(arr[i].id == old_id_val){
         found_old=true;
         new_pos=i;
         break;
@@ -709,12 +715,14 @@ const book_author=document.getElementById("book_author");
     if(found_old){
       
       document.getElementById('error1_o').innerText = '';
+      found_old=true;
       
     }
     
     
     else{
       document.getElementById('error1_o').innerText = 'id not found';
+      found_old=false;
      
 
     }
@@ -752,12 +760,10 @@ const book_author=document.getElementById("book_author");
   else{
   
 
-    let arr = JSON.parse(window.localStorage.getItem('books')) || [];
-
 
     for(var i=0 ; i<arr.length ; ++i){
 
-      if(arr[i].id==bookid_val && bookid_val!=old_id_val){
+      if( arr[i].id==bookid_val && bookid_val!=old_id_val){
         found_new=true;
         break;
       }
@@ -836,40 +842,45 @@ if((bookid_valid===false || bookname_valid===false || book_author_valid===false 
     
 else{
 
+console.log("yes")
   let new_pslb=0;
 
 
-  let lb = JSON.parse(window.localStorage.getItem('borrowed')) || [];
+
+  console.log(lb);
 
 
   for(var i=0 ; i<lb.length ; ++i){
 
-    if(lb[i]==old_id_val){
+    if(lb[i].id == old_id_val){
       new_pslb=i;
       break;
     }
   }
 
 
-  let arr = JSON.parse(window.localStorage.getItem('books')) || [];
+
 
 
   let cat=document.getElementById("category").value;
+  
+
 
   arr[new_pos].name=bookname_val;
   arr[new_pos].id=bookid_val;
   arr[new_pos].author=bookauthor_val;
   arr[new_pos].category=cat;
 
-  lb[new_pslb].bookname=bookname_val;
-  lb[new_pslb].id=bookid_val;
-  lb[new_pslb].category=cat;
-  lb[new_pslb].author=bookauthor_val;
+  lb[new_pslb].bookname= bookname_val;
+  lb[new_pslb].id= bookid_val;
+  lb[new_pslb].category= cat;
+  lb[new_pslb].author= bookauthor_val;
 
   window.localStorage.setItem('borrowed',JSON.stringify(lb));
   
 
   window.localStorage.setItem('books',JSON.stringify(arr));
+
 
   window.location.href="index_admin.html"
   return false;
