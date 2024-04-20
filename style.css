@@ -1145,8 +1145,10 @@ footer .container5{
 
     height: 100vh;
 
-    background-image: url(imgs/sigin-back.jpg);
+    /* background-image: url(imgs/sigin-back.jpg);
+     */
     /* background-color: #c7c7c7; */
+    background-image: linear-gradient(to bottom right,#A9F1DF ,  #FFBBBB);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -1177,7 +1179,7 @@ footer .container5{
     /* border:  solid   rgba(230,10,65); */
     /* border-radius: 10%; */
     
-    box-shadow: 5px 5px 5px 4px rgba(58,70,100) , 5px 5px 5px 10px whitesmoke;
+   border: 1px rgba(58, 70, 100,1) solid;
 
     display: flex;
 
@@ -1195,8 +1197,7 @@ footer .container5{
     background-color: transparent;
     height:500px;
     width: 30%;
-    box-shadow: 5px 5px 5px 4px rgba(58,70,100) , 5px 5px 5px 10px whitesmoke;
-
+    border: 1px rgba(58, 70, 100,1) solid;
 
     display: flex;
 
@@ -1212,7 +1213,7 @@ footer .container5{
     height: 550px;
     width:40%;
     display: flex;
-    box-shadow: 5px 5px 5px 4px rgba(58,70,100) , 5px 5px 5px 10px whitesmoke;
+    border: 1px rgba(58, 70, 100,1) solid;
 
 
 }
@@ -1224,7 +1225,7 @@ footer .container5{
     height: 550px;
     width:40%;
     display: flex;
-    box-shadow: 5px 5px 5px 4px rgba(58,70,100) , 5px 5px 5px 10px whitesmoke;
+    border: 2px rgba(58, 70, 100,1) solid;
 }
 
 
@@ -1383,7 +1384,7 @@ form .input-box{
     position: absolute;
     top: 10px;
     right: 10px;
-    color:rgba(58,70,100);
+    color:rgba(58, 70, 100,1);
     font-size: 20px;
 }
 
@@ -1407,7 +1408,7 @@ form .input-box{
     content: " ";
     width: 150px;
     height: 2px;
-    background-color: rgba(58, 70, 100);
+    background-color: rgba(58, 70, 100,1);
     position: absolute;
     top: 51px;
     left: -38px;
@@ -1419,7 +1420,7 @@ form .input-box{
     content: " ";
     width: 175px;
     height: 2px;
-    background-color: rgba(58, 70, 100);
+    background-color: rgba(58, 70, 100,1);
     position: absolute;
     top: 55px;
     left: -51px;
@@ -1431,7 +1432,7 @@ form .input-box{
     content: " ";
     width: 160px;
     height: 2px;
-    background-color: rgba(58, 70, 100);
+    background-color: rgba(58, 70, 100,1);
     position: absolute;
     top: 55px;
     left: -11px;
@@ -1443,7 +1444,7 @@ form .input-box{
     content: " ";
     width: 180px;
     height: 2px;
-    background-color: rgba(58, 70, 100);
+    background-color: rgba(58, 70, 100,1);
     position: absolute;
     top: 59px;
     left: -20px;
@@ -1514,7 +1515,7 @@ form .btn-group button{
     width: 45%;
 
     height: 30px;
-    background-color: rgba(58,70,100);
+    background-color: rgba(58, 70, 100,1);
     border-radius: 20px;
     color: white;
     cursor: pointer;
@@ -1558,6 +1559,7 @@ main{
     width: 90%;
     overflow: hidden;
     display: flex;
+    /* justify-content: space-between; */
     position: relative;
 
     padding: 30px 10px ;
@@ -1572,19 +1574,20 @@ main{
 
 .slider .book{
 
-    width: 300px;
+    width: 270px;
 
     box-shadow: 0 0 20px  5px rgba(0,0,0,0.2);
     border-radius: 10px;
     margin-right: 20px;
     transition: all 1.5s ease;
     
+    
 }
 
 
 .slider .book img{
 
-    width:260px;
+    width:270px;
     height: 300px;
     border-radius: 10px;
     
@@ -1664,6 +1667,14 @@ main{
     /* width: 100%; */
 }
 
+.error-delete{
+    text-align: center;
+    color: red;
+    /* background-color: yellow; */
+    font-weight: 700;
+    /* width: 100%; */
+
+}
 .slider .book .info button a{
 
     text-decoration: none;
@@ -1866,4 +1877,120 @@ main{
 
     width: 50%;
 
+}
+
+/* =================================================== */
+
+
+/* profile styling */
+
+
+.about-profile .left{
+    width: 21%;
+    height: 80%;
+    position: relative;
+    border: #555555 solid 6px;
+    border-radius: 5px;
+    margin-right: 40px;
+
+ } 
+
+ .about-profile .inside-left{
+    background-image: url(imgs/about.jpg);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 20px;
+    left: 24px;
+    overflow: hidden;
+    
+}
+
+.about-profile .img-inside-left{
+    background-color: rgba(0,0,0,0);
+    width: 100%;
+    height: 0;
+    position: absolute;
+    overflow: hidden;
+    top:100%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    transition: all  1s ease-in;
+   
+
+
+}
+
+
+.about-profile .icons-img-inside-left{
+
+    position:absolute;
+   
+    width: 200px;
+    height: 50px;
+
+    top: 193px;
+    left: 70px;
+}
+
+.about-profile .icons-img-inside-left i {
+    color: white;
+   
+    font-size: 20px;
+    padding: 10px;
+   
+  
+    transition: all 0.3s ease-in-out 0s;
+   
+    
+    
+}
+
+.about-profile .icons-img-inside-left i:hover{
+
+    color: #ff305b;
+}
+
+
+
+.about-profile .inside-left:hover .img-inside-left{
+    top: 0;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+
+}
+
+
+.about-profile {
+
+    display: flex;
+    flex-direction: row;
+    height: 60vh;
+
+    justify-content: space-around;
+    background-color: #ddd;
+    /* margin-top: 20px; */
+    column-gap: 50px;
+    align-items: center;
+}
+
+
+.about-profile .info{
+
+
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    border-bottom: 2px   dashed #ff305b;
+
+    
+}
+.about-profile .info p{
+
+    padding: 4px;
+}
+.about-profile .info span{
+
+    color:#ff305b ;
 }

@@ -23,6 +23,17 @@ location.pathname=="/C:/web-project-library/sign%20up.html"){
 
 
 
+class user{
+    
+  constructor(x,y,z,e){
+
+    this.name=x;
+    this.pass=y;
+    this.admin=z;
+    this.email=e;
+
+  }
+}
 
 
 
@@ -113,6 +124,7 @@ const form = document.getElementById('sign-in-form');
   console.log(arr)
 
 
+
   for(var i=0 ; i<arr.length ; ++i){
 
     console.log(arr[i].name)
@@ -120,8 +132,12 @@ const form = document.getElementById('sign-in-form');
 
     if(arr[i].name==username_val && arr[i].pass==password_val){
 
+      const us=new user(arr[i].name,arr[i].pass,arr[i].admin,arr[i].email);
+      window.localStorage.setItem("last-sign",JSON.stringify(us));
+
       if(arr[i].admin=="true"){
-          
+        
+
     window.location.href="index_admin.html"
     return false ;
       }
@@ -138,7 +154,7 @@ const form = document.getElementById('sign-in-form');
 
 
   event.preventDefault();
-  document.getElementById("not-found").innerText="user name not found";
+  document.getElementById("not-found").innerText="wrong pass or name";
 
 
 
@@ -184,9 +200,20 @@ const confirm_password=document.getElementById("confirm-password");
 const is_admin=document.getElementById('is_admin');
 
 
+username.focus();
+
+
+username.onblur=function(){
+
+  password.focus();
+}
+
+
+
 
 const form=document.getElementById("sign-up-form");
 
+let arr = JSON.parse(window.localStorage.getItem('user')) || [];
 
 console.log(username)
 console.log(password)
@@ -224,8 +251,20 @@ if (username_val === '') {
 
 else{
 
-  document.getElementById('error1').innerText = '';
-  user_valid=true;
+  for(var i=0 ; i<arr.length ; ++i){
+
+    if(arr[i].name==username_val){
+      document.getElementById('error1').innerText = 'username already taken';
+      user_valid=false;
+      break;
+    }
+    else{
+      document.getElementById('error1').innerText = '';
+      user_valid=true;
+
+    }
+  }
+
 }
 
 if (password_val=== '') {
@@ -326,24 +365,15 @@ let z=""
 
     }
 
-  class user{
-    
-    constructor(x,y,z){
-
-      this.name=x;
-      this.pass=y;
-      this.admin=z;
-
-    }
-  }
 
 
 
-  let arr = JSON.parse(window.localStorage.getItem('user')) || [];
-  const us=new user(username_val,password_val,z);
+
+  const us=new user(username_val,password_val,z,email_val);
   
   arr.push(us)
-  window.localStorage.setItem("user",JSON.stringify(arr))
+  window.localStorage.setItem("user",JSON.stringify(arr));
+  window.localStorage.setItem("last-sign",JSON.stringify(us));
   
 
 
@@ -353,15 +383,16 @@ let z=""
   if(is_admin.checked){
 
 
-
-  form.action="index_admin.html"
+    window.location.href="index_admin.html";
+    return false;
+ 
 }
 
 
 else{
 
-
-form.action="index_user.html"
+  window.location.href="index_user.html";
+  return false;
 }
 
 }
@@ -533,12 +564,36 @@ else{
       this.name=name;
       this.author=author;
       this.category=category;
+      this.borrowed="false"
 
     }
   }
 
+
+  
+  class added{
+
+    constructor(i,a,b,c,d,e){
+
+        this.id=i;
+        this.bookname=a;
+        this.author=b;
+        this.category=c;
+        this.adder_username=d;
+        this.pass=e;
+    }
+}
+
   let cat=document.getElementById("category").value;
   
+  let add = JSON.parse(window.localStorage.getItem('added')) || [];
+  
+  let arr_user = JSON.parse(window.localStorage.getItem('last-sign')) || null;
+
+  let us_added=new added(bookid_val,bookname_val,bookauthor_val,cat,arr_user.name,arr_user.pass)
+  add.push(us_added);
+
+  window.localStorage.setItem("added",JSON.stringify(add))
 
   let arr = JSON.parse(window.localStorage.getItem('books')) || [];
   
@@ -781,6 +836,21 @@ if((bookid_valid===false || bookname_valid===false || book_author_valid===false 
     
 else{
 
+  let new_pslb=0;
+
+
+  let lb = JSON.parse(window.localStorage.getItem('borrowed')) || [];
+
+
+  for(var i=0 ; i<lb.length ; ++i){
+
+    if(lb[i]==old_id_val){
+      new_pslb=i;
+      break;
+    }
+  }
+
+
   let arr = JSON.parse(window.localStorage.getItem('books')) || [];
 
 
@@ -790,6 +860,14 @@ else{
   arr[new_pos].id=bookid_val;
   arr[new_pos].author=bookauthor_val;
   arr[new_pos].category=cat;
+
+  lb[new_pslb].bookname=bookname_val;
+  lb[new_pslb].id=bookid_val;
+  lb[new_pslb].category=cat;
+  lb[new_pslb].author=bookauthor_val;
+
+  window.localStorage.setItem('borrowed',JSON.stringify(lb));
+  
 
   window.localStorage.setItem('books',JSON.stringify(arr));
 

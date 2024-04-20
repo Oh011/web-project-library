@@ -31,13 +31,20 @@ bt.forEach(function(x){
     
     x.addEventListener("click",function(){
 
-        so_div.removeChild(src_div);
-
-
+        let y=x.nextElementSibling;
+        
+        
         for(var i=0 ; i<arr.length ; ++i){
+            
+            if(arr[i].id==src_div.getAttribute("data-id") ){
+                
+                if(arr[i].borrowed=="true"){
+                    y.innerHTML="can not delete";
+                    break;
 
-            if(arr[i].id==src_div.getAttribute("data-id")){
-
+                }
+            
+            so_div.removeChild(src_div);
                 let temp=arr[i].id;
 
                 arr=arr.filter(function(ele ,ind){
@@ -50,7 +57,14 @@ bt.forEach(function(x){
             }
 
 
+            else{
+    
+                break;
+    
+            }
         }
+
+
 
 
         window.localStorage.setItem('books',JSON.stringify(arr));
