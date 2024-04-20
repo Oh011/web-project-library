@@ -1157,6 +1157,7 @@ footer .container5{
     position: relative;
     /* top: -20px; */
     overflow: auto;
+    font-weight: 600;
     
 }
 
@@ -1321,6 +1322,12 @@ form .input-box{
     right: 0;
     height: 20px;
     color: red;
+
+}
+
+#not-found{
+    color: red;
+
 }
 
 
@@ -1558,6 +1565,11 @@ main{
 }
 
 
+.slider .image{
+    cursor: pointer;
+}
+
+
 .slider .book{
 
     width: 300px;
@@ -1614,6 +1626,22 @@ main{
 
 }
 
+ #edit, .slider .book .info .delete{
+
+
+    
+    width: 60px;
+    background-color:rgba(230,10,65,1);
+    border: none;
+    outline: none;
+    color: white;
+    padding: 7px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 20px;
+
+}
+
 
 .slider .book .info button[data-borrowed="true"]{
 
@@ -1631,6 +1659,7 @@ main{
 .error-borrow{
     text-align: center;
     color: red;
+    /* background-color: yellow; */
     font-weight: 700;
     /* width: 100%; */
 }
