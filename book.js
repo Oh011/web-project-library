@@ -1,21 +1,21 @@
 
-let arr_user = JSON.parse(window.localStorage.getItem('last-sign')) || null;
+let last_sign = JSON.parse(window.localStorage.getItem('last-sign')) || null;
 
-let arr = JSON.parse(window.localStorage.getItem('books')) || [];
+let books = JSON.parse(window.localStorage.getItem('books')) || [];
 
-console.log(arr)
-
-
+console.log(books)
 
 
 
-for(var i=0 ; i<arr.length ; ++i){
 
 
-    if(arr[i].id==localStorage.getItem("last-stored")){
+for(var i=0 ; i<books.length ; ++i){
 
 
-        if(arr_user.admin=="true"){
+    if(books[i].id==localStorage.getItem("last-stored")){
+
+
+        if(last_sign.admin=="true"){
 
             document.body.innerHTML=`
             <nav class="nav-bar">
@@ -24,17 +24,13 @@ for(var i=0 ; i<arr.length ; ++i){
             </div>
             <div class="nav-center">
                 <ul>
-                <li class="homee"><a href="index.html" class="home">Home</a></li>
-                <li><a href="about_us.html">About Us</a></li>
-                <li><a href="sign in.html">Sign in</a></li>
+                <li class="homee"><a href="index.html" class="home">Home</a></li>             
                 <li><a href="add_book.html">Add Book</a></li>
                 <li><a href="list_books.html">view list of books</a></li>
                 <li><a href="profile.html">Profile</a></li>
                 <li class="log-out">
-                    <form>
-                        <input type="submit" value="Log Out" class="log-out">
-                    </form>
-        </li>
+                        <a href="index.html">Log Out</a>
+                </li>
                 </ul>
             </div>
             <div class="nav-right">
@@ -52,10 +48,10 @@ for(var i=0 ; i<arr.length ; ++i){
             <div class="book-info">
                 
                 
-                <p>Book id: ${arr[i].id}</p>
-                <p>Book name : ${arr[i].name}</p>
-                <p>book authour: ${arr[i].author}</p>
-                <p>book category: ${arr[i].category}</p>
+                <p>Book id: ${books[i].id}</p>
+                <p>Book name : ${books[i].name}</p>
+                <p>book authour: ${books[i].author}</p>
+                <p>book category: ${books[i].category}</p>
                 
                 <h3>Book description:</h3>
                 
@@ -136,12 +132,13 @@ for(var i=0 ; i<arr.length ; ++i){
             <div class="nav-center">
                 <ul>
                 <li class="homee"><a href="index_user.html" class="home">Home</a></li>
-                <li><a href="list_books_user.html">View  List Of Books</a></li>
-                <li><a href="about_us.html">About Us</a></li>
+                <li><a href="list_books_user.html">View List Of Books</a></li>
                 <li><a href="sign in.html">Sign in</a></li>
                 <li><a href="profile.html">Profile</a></li>
-                <li><a href="">Log Out</a></li>
-        </li>
+                <li class="log-out">
+                        <a href="index.html">Log Out</a>
+                </li>
+
                 </ul>
             </div>
             <div class="nav-right">
@@ -159,10 +156,10 @@ for(var i=0 ; i<arr.length ; ++i){
             <div class="book-info">
                 
                 
-                <p>Book id: ${arr[i].id}</p>
-                <p>Book name : ${arr[i].name}</p>
-                <p>book authour: ${arr[i].author}</p>
-                <p>book category: ${arr[i].category}</p>
+                <p>Book id: ${books[i].id}</p>
+                <p>Book name : ${books[i].name}</p>
+                <p>book authour: ${books[i].author}</p>
+                <p>book category: ${books[i].category}</p>
                 
                 <h3>Book description:</h3>
                 
