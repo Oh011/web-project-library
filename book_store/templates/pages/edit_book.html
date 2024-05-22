@@ -1,0 +1,89 @@
+{% extends 'base.html'%}
+
+{% block content%}
+{% include 'parts/adminNav.html'%}
+<div class="edit-book-container">
+
+    <div class="form-container">
+
+
+        <form method="get" id="edit-book-form">
+
+
+            <div class="form-header">
+                <h3>edit book</h3>
+
+            </div>
+
+
+
+            <div class="input-box">
+
+
+                <input type="text" name="book_id" id="old_book_id" placeholder="old book id">
+                <div id="error1_o"></div>
+            </div>
+
+
+
+
+            <div class="input-box">
+
+                <input type="text" name="book_id" id="book_id" placeholder="book id">
+                <div id="error1"></div>
+            </div>
+
+
+            <div class="input-box">
+
+                <input type="text" name="book_name" id="book_name" placeholder="book name">
+                <div id="error2"></div>
+            </div>
+
+
+
+            <div class="input-box">
+
+                <input type="text" name="author" id="book_author" placeholder="book author">
+                <div id="error3"></div>
+            </div>
+
+
+
+            <div class="book-category">
+
+
+                <label for="category">category:</label>
+                <select id="category" name="category">
+
+
+                    <option value="History">History</option>
+                    <option value="romantic">Romantic</option>
+                    <option value="programming">programming</option>
+
+                </select>
+            </div>
+
+
+            <div class="text-area">
+
+                <textarea name="descreption" placeholder="write description  "></textarea>
+            </div>
+
+
+
+
+            <div class="btn-group">
+
+                <button type="submit">edit</button>
+            </div>
+
+
+        </form>
+
+    </div>
+
+
+</div>
+{% include 'parts/footer.html'%}
+{% endblock %}

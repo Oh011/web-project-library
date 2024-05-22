@@ -1,0 +1,72 @@
+{% extends 'base.html'%}
+
+{% block content%}
+{% include 'parts/userNav.html'%}
+<div class="sign-in-container">
+
+
+    <div class="form-container">
+
+        <form method="get" id="sign-in-form">
+
+            <div class="form-header">
+
+                <h3> Sign In </h3>
+            </div>
+
+
+            <div class="input-box">
+
+                <input type="text" placeholder="UserName" id="username" name="UserName">
+                <i class="fa-solid fa-user"></i>
+
+                <div id="error1">
+
+                </div>
+
+            </div>
+
+
+            <div class="input-box">
+
+                <input type="password" placeholder="Password" id="password" name="password">
+                <i class="fa-solid fa-lock " id="pass-lock"></i>
+
+
+                <div id="error2">
+
+                </div>
+
+            </div>
+
+            <div id="not-found">
+
+            </div>
+
+            <div class="remember-me">
+
+                <input type="checkbox">
+                <label style="display: inline;">remember me</label>
+            </div>
+
+
+
+            <div class="btn-group">
+                <button type="submit" id="sign-bt">sign in</button>
+
+            </div>
+
+
+            <div class="sign-up-text">
+
+                <p>Don't Have an Account?  <a href="sign up.html">Sign UP</a></p>
+
+            </div>
+        </form>
+
+    </div>
+
+
+</div>
+{% include 'parts/footer.html'%}
+{% endblock %}

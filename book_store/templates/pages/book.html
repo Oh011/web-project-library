@@ -1,0 +1,36 @@
+{% extends 'base.html'%}
+{% load static %}
+{% block content%}
+<div class="book-container">
+
+
+    <div class="book-info">
+
+
+        <p>Book id: 2</p>
+        <p>Book name : Game of thrones</p>
+        <p>book authour: Hamdy</p>
+        <p>book category: History</p>
+
+        <h3>Book description:</h3>
+
+
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam pariatur sapiente quae sint, voluptate quasi,
+            deserunt voluptatibus soluta impedit nesciunt quam vel officia necessitatibus aspernatur blanditiis exercitationem
+            eligendi, earum quod ad omnis nihil veniam numquam dolores iste. Asperiores in beatae numquam, repellat quis incidunt
+            veritatis minus facilis iusto ipsum enim praesentium, nesciunt quos atque suscipit soluta saepe itaque. Ullam officia
+            facilis sunt possimus at dolorem nihil, dolor impedit
+        </p>
+
+
+    </div>
+    <div class="book-img">
+
+        <img src="{% static 'imgs/library books/gameofthrones.png' %}">
+
+
+    </div>
+</div>
+{% include 'parts/footer.html'%}
+{% endblock %}

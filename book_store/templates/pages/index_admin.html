@@ -1,0 +1,145 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+{% include 'parts/adminNav.html'%}
+<section class="section1">
+    <div class="container">
+        <div class="left">
+            <h2>
+                Enjoy Reading Our
+                Amazing Books
+            </h2>
+            <!-- <p>Sed autem laudantium dolores. Voluptatem itaque ea consequatur eveniet. Eum quas beatae cumque eum quaerat.</p> -->
+            <div class="gp-btn">
+                <a href="#Gallery" class="main-btn">See Some Of Our Books </a>
+
+            </div>
+        </div>
+
+        <div class="right">
+            <img src="{% static 'imgs/open-book-icon-free-vector.jpg' %}" alt="">
+        </div>
+    </div>
+</section>
+
+
+<section class="section2">
+    <div class="container2">
+        <div class="main-titles">
+            <h2>Top</h2>
+            <p>Our <span>Most Saled</span> Books</p>
+        </div>
+
+        <div class="chef-cards">
+            <div class="card">
+                <picture>
+                    <img src="{% static 'imgs/library books/jurassic-book.png' %}" alt="">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                        <path fill="#fff" fill-opacity="1"
+                              d="M0,32L17.1,74.7C34.3,117,69,203,103,208C137.1,213,171,139,206,117.3C240,96,274,128,309,165.3C342.9,203,377,245,411,245.3C445.7,245,480,203,514,160C548.6,117,583,75,617,85.3C651.4,96,686,160,720,208C754.3,256,789,288,823,277.3C857.1,267,891,213,926,213.3C960,213,994,267,1029,272C1062.9,277,1097,235,1131,224C1165.7,213,1200,235,1234,240C1268.6,245,1303,235,1337,197.3C1371.4,160,1406,96,1423,64L1440,32L1440,320L1422.9,320C1405.7,320,1371,320,1337,320C1302.9,320,1269,320,1234,320C1200,320,1166,320,1131,320C1097.1,320,1063,320,1029,320C994.3,320,960,320,926,320C891.4,320,857,320,823,320C788.6,320,754,320,720,320C685.7,320,651,320,617,320C582.9,320,549,320,514,320C480,320,446,320,411,320C377.1,320,343,320,309,320C274.3,320,240,320,206,320C171.4,320,137,320,103,320C68.6,320,34,320,17,320L0,320Z">
+                        </path>
+                    </svg>
+                </picture>
+                <div class="card-content">
+                    <h3>Jurassic Park</h3>
+                    <span>Author: Michael Crichton</span>
+                    <!-- <p>Velit aut quia fugit et et. Dolorum ea voluptate vel tempore tenetur ipsa quae aut. Ipsum exercitationem iure minima
+                        enim corporis et voluptate.</p> -->
+                </div>
+
+            </div>
+            <div class="card">
+                <picture>
+                    <img src="{% static 'imgs/library books/gameofthrones.png' %}" height="450px" alt="">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                        <path fill="#fff" fill-opacity="1"
+                              d="M0,32L17.1,74.7C34.3,117,69,203,103,208C137.1,213,171,139,206,117.3C240,96,274,128,309,165.3C342.9,203,377,245,411,245.3C445.7,245,480,203,514,160C548.6,117,583,75,617,85.3C651.4,96,686,160,720,208C754.3,256,789,288,823,277.3C857.1,267,891,213,926,213.3C960,213,994,267,1029,272C1062.9,277,1097,235,1131,224C1165.7,213,1200,235,1234,240C1268.6,245,1303,235,1337,197.3C1371.4,160,1406,96,1423,64L1440,32L1440,320L1422.9,320C1405.7,320,1371,320,1337,320C1302.9,320,1269,320,1234,320C1200,320,1166,320,1131,320C1097.1,320,1063,320,1029,320C994.3,320,960,320,926,320C891.4,320,857,320,823,320C788.6,320,754,320,720,320C685.7,320,651,320,617,320C582.9,320,549,320,514,320C480,320,446,320,411,320C377.1,320,343,320,309,320C274.3,320,240,320,206,320C171.4,320,137,320,103,320C68.6,320,34,320,17,320L0,320Z">
+                        </path>
+                    </svg>
+                </picture>
+                <div class="card-content">
+                    <h3>Game Of Thrones</h3>
+                    <span>Author: George R. R. Martin</span>
+                    <!-- <p>Velit aut quia fugit et et. Dolorum ea voluptate vel tempore tenetur ipsa quae aut. Ipsum exercitationem iure minima
+                        enim corporis et voluptate.</p> -->
+                </div>
+
+            </div>
+            <div class="card">
+                <picture>
+                    <img src="{% static 'imgs/library books/smile.png' %}" height="450px" alt="">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                        <path fill="#fff" fill-opacity="1"
+                              d="M0,32L17.1,74.7C34.3,117,69,203,103,208C137.1,213,171,139,206,117.3C240,96,274,128,309,165.3C342.9,203,377,245,411,245.3C445.7,245,480,203,514,160C548.6,117,583,75,617,85.3C651.4,96,686,160,720,208C754.3,256,789,288,823,277.3C857.1,267,891,213,926,213.3C960,213,994,267,1029,272C1062.9,277,1097,235,1131,224C1165.7,213,1200,235,1234,240C1268.6,245,1303,235,1337,197.3C1371.4,160,1406,96,1423,64L1440,32L1440,320L1422.9,320C1405.7,320,1371,320,1337,320C1302.9,320,1269,320,1234,320C1200,320,1166,320,1131,320C1097.1,320,1063,320,1029,320C994.3,320,960,320,926,320C891.4,320,857,320,823,320C788.6,320,754,320,720,320C685.7,320,651,320,617,320C582.9,320,549,320,514,320C480,320,446,320,411,320C377.1,320,343,320,309,320C274.3,320,240,320,206,320C171.4,320,137,320,103,320C68.6,320,34,320,17,320L0,320Z">
+                        </path>
+                    </svg>
+                </picture>
+                <div class="card-content">
+                    <h3>Smile</h3>
+                    <span>Author: Raina Telgemeier</span>
+                    <!-- <p>Velit aut quia fugit et et. Dolorum ea voluptate vel tempore tenetur ipsa quae aut. Ipsum exercitationem iure minima
+                        enim corporis et voluptate.</p> -->
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="section3" id="Gallery">
+    <div class="container3">
+        <div class="main-titles">
+            <!-- <h2>Gallery</h2> -->
+            <p>Some Of Our<span> Intresting</span> Books</p>
+        </div>
+        <div class="gallery-imgs">
+            <picture>
+                <img src="{% static 'imgs/library gallery/above-all-else-cover-hires.jpg' %}" alt="">
+                <div class="img-layer">
+                    <h2>Above All Else</h2>
+                    <!-- <p>Hawaiian pizza with ham and pineapple</p> -->
+                </div>
+            </picture>
+            <picture>
+                <img src="{% static 'imgs/library gallery/alaska-hires.jpg' %}" alt="">
+                <div class="img-layer">
+                    <h2>Alaska</h2>
+                    <!-- <p>Levitation pizza on black background</p> -->
+                </div>
+            </picture>
+            <picture>
+                <img src="{% static 'imgs/library gallery/faces-of-the-moon-hires.jpg' %}" alt="">
+                <div class="img-layer">
+                    <h2>Faces Of The Moon</h2>
+                    <!-- <p>Tasty beef steaks flying above cast iron grate with fire flames.</p> -->
+                </div>
+            </picture>
+            <picture>
+                <img src="{% static 'imgs/library gallery/family-pack-hires.jpg' %}" alt="">
+                <div class="img-layer">
+                    <h2>Family Pack</h2>
+                    <!-- <p>Frittata or potato pie in a ceramic plate</p> -->
+                </div>
+            </picture>
+            <picture>
+                <img src="{% static 'imgs/library gallery/feathered-dinosaurs-of-china-hires.jpg' %}" alt="">
+                <div class="img-layer">
+                    <h2>Feathered Dinosaurs Of China</h2>
+                    <!-- <p>grass fed bison hamburger with chips & beer</p> -->
+                </div>
+            </picture>
+            <picture>
+                <img src="{% static 'imgs/library gallery/people-of-the-town-cvr.jpg' %}" alt="">
+                <div class="img-layer">
+                    <h2>The People Of Town</h2>
+                    <!-- <p>Tender and juicy skewers of ground lamb or beef, flavored with aromatic spices and herbs</p> -->
+                </div>
+            </picture>
+
+        </div>
+    </div>
+
+</section>
+{% include 'parts/footer.html'%}
+{% endcontent%}

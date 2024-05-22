@@ -1,0 +1,35 @@
+{% load static %}
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
+
+
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="descrption" content="">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="{% static 'css/all.css' %}">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link rel="icon" type="image/x-icon" href="{% static 'imgs/openbookjpg.jpg' %}">
+
+</head>
+<body>
+
+    {% block content%}
+
+    {% endblock %}
+
+
+
+    <script src="{% static 'sign.js' %}"></script>
+    <script src=" {% static 'profile.js' %}"></script>
+    <script src=" {% static 'book.js' %}"></script>
+    <script src=" {% static 'slide.js' %}"></script>
+</body>
+</html>

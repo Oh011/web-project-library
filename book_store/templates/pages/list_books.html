@@ -1,0 +1,213 @@
+{% extends 'base.html'%}
+{% load static %}
+{% block content%}
+{% include 'parts/adminNav.html'%}
+<section class="section1">
+    <div class="container">
+        <div class="left">
+            <h2>
+                Enjoy Reading Our
+                Amazing Books
+            </h2>
+            <!-- <p>Sed autem laudantium dolores. Voluptatem itaque ea consequatur eveniet. Eum quas beatae cumque eum quaerat.</p> -->
+            <div class="gp-btn">
+                <a href="#Gallery" class="main-btn">See Some Of Our Books </a>
+
+            </div>
+        </div>
+
+        <div class="right">
+            <img src="{% static 'imgs/open-book-icon-free-vector.jpg' %}" alt="">
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+<div class="search-bar">
+
+
+
+    <div class="search">
+
+        <div class="options">
+
+            <select>
+                <option>ALL</option>
+                <option>lorem</option>
+                <option>lorem</option>
+                <option>lorem</option>
+                <option>lorem</option>
+                <option>lorem</option>
+            </select>
+        </div>
+
+
+        <div class="search-text">
+
+            <input type="text" placeholder="search for Books">
+        </div>
+
+        <div class="search-icon">
+
+
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+        </div>
+
+    </div>
+
+
+</div>
+
+
+
+
+
+
+
+
+<h2 class="book-title">History books</h2>
+
+<main class="hsitory" id="history">
+
+
+    <div class="slider" id="slider-history">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="arrow">
+
+            <button class="left" onclick="left()"> &lt </button>
+            <button class="right" onclick="right()"> &gt </button>
+        </div>
+
+    </div>
+
+</main>
+
+
+
+<h2 class="book-title">Romantic books</h2>
+
+
+
+
+
+<main class="main1">
+
+
+    <div class="slider" id="slider-romantic">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="arrow">
+
+            <button class="left" onclick="left()"> &lt </button>
+            <button class="right" onclick="right()"> &gt </button>
+        </div>
+
+    </div>
+</main>
+
+
+
+<h2 class="book-title">Programming books</h2>
+
+
+<main class="main1">
+
+
+    <div class="slider" id="slider-programming">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="arrow">
+
+            <button class="left" onclick="left()"> &lt </button>
+            <button class="right" onclick="right()"> &gt </button>
+        </div>
+
+    </div>
+</main>
+{% include 'parts/footer.html'%}
+{% endblock %}

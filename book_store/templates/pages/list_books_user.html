@@ -1,0 +1,287 @@
+{% extends 'base.html'%}
+{% load static %}
+{% block content%}
+{% include 'parts/userNav.html'%}
+<section class="section1">
+    <div class="container">
+        <div class="left">
+            <h2>
+                Enjoy Reading Our
+                Amazing Books
+            </h2>
+            <!-- <p>Sed autem laudantium dolores. Voluptatem itaque ea consequatur eveniet. Eum quas beatae cumque eum quaerat.</p> -->
+            <div class="gp-btn">
+                <a href="#Gallery" class="main-btn">See Some Of Our Books </a>
+
+            </div>
+        </div>
+
+        <div class="right">
+            <img src="{% static 'imgs/open-book-icon-free-vector.jpg' %}" alt="">
+        </div>
+    </div>
+</section>
+
+
+
+<div class="search-bar">
+
+
+
+    <div class="search">
+
+        <div class="options">
+
+            <select>
+                <option>ALL</option>
+                <option>lorem</option>
+                <option>lorem</option>
+                <option>lorem</option>
+                <option>lorem</option>
+                <option>lorem</option>
+            </select>
+        </div>
+
+
+        <div class="search-text">
+
+            <input type="text" placeholder="search for Books">
+        </div>
+
+        <div class="search-icon">
+
+
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+        </div>
+
+    </div>
+
+
+</div>
+
+
+
+
+<h2 class="book-title">History books</h2>
+
+<main class="main1">
+
+
+    <div class="slider" id="slider-history">
+
+        <!-- <div class="book">
+
+          <div class="image">
+            <a href="" class="book-ele" data-bookid="1"><img src="{% static 'imgs/library books/gameofthrones.png' %}"></a>
+          </div>
+
+
+          <div class="info">
+
+            <div class="book-name"><span>Book Name:</span>data structres</div>
+
+            <div class="author">
+              <span>Book Author: </span>Lorem, ipsum.
+            </div>
+
+            <button class="borrow" data-borrowed="false" >Borrow</button>
+           <div class="error-borrow"  >
+
+           </div>
+          </div>
+
+        </div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="arrow">
+
+            <button class="left" onclick="left()"> &lt </button>
+            <button class="right" onclick="right()"> &gt </button>
+        </div>
+
+    </div>
+
+
+
+
+
+</main>
+
+
+
+
+
+<h2 class="book-title">Romantic books</h2>
+
+<main class="main1">
+
+
+    <div class="slider" id="slider-romantic">
+
+        <!-- <div class="book">
+
+                <div class="image">
+                  <a href="" class="book-ele" data-bookid="1"><img src="{% static 'imgs/library books/gameofthrones.png' %}"></a>
+                </div>
+
+
+                <div class="info">
+
+                  <div class="book-name"><span>Book Name:</span>data structres</div>
+
+                  <div class="author">
+                    <span>Book Author: </span>Lorem, ipsum.
+                  </div>
+
+        <button class="borrow">Borrow</button>
+                 <div class="error-borrow"></div>
+                </div>
+
+              </div>
+         -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="arrow">
+
+            <button class="left" onclick="left()"> &lt </button>
+            <button class="right" onclick="right()"> &gt </button>
+        </div>
+
+    </div>
+
+
+
+
+
+</main>
+
+
+
+
+
+
+<h2 class="book-title">programming books</h2>
+
+<main class="main1">
+
+
+    <div class="slider" id="slider-programming">
+
+        <!-- <div class="book">
+
+                <div class="image">
+                  <a href="" class="book-ele" data-bookid="1"><img src="{% static 'imgs/library books/gameofthrones.png' %}"></a>
+                </div>
+
+
+                <div class="info">
+
+                  <div class="book-name"><span>Book Name:</span>data structres</div>
+
+                  <div class="author">
+                    <span>Book Author: </span>Lorem, ipsum.
+                  </div>
+
+        <button class="borrow">Borrow</button>
+                 <div class="error-borrow"></div>
+                </div>
+
+              </div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="arrow">
+
+            <button class="left" onclick="left()"> &lt </button>
+            <button class="right" onclick="right()"> &gt </button>
+        </div>
+
+    </div>
+
+
+
+
+
+</main>
+{% include 'parts/footer.html'%}
+{% endblock %}
